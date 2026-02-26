@@ -20,12 +20,8 @@ header{
 .name{
     font-size: 40px;
     font-weight: 700;
+    margin-top: 0px;
     margin-bottom: 5px;
-}
-
-.location{
-    margin: 0px;
-    font-size: 18px;
 }
 
 .contact{
