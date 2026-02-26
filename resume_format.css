@@ -1,0 +1,98 @@
+/* ==== Basic Styling ==== */
+body {
+    margin:0px;
+    font-family: 'Times New Roman', Times, serif;
+    background: white;
+    color: #000;
+}
+
+.container {
+    width: 800px;
+    margin: 40px auto;
+}
+
+/* ==== Header ==== */
+header{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.location{
+    margin: 0px;
+    font-size: 18px;
+}
+
+.contact{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: rgb(2, 2, 147);
+}
+
+.contact span {
+    margin: 0 8px;
+}
+
+
+/* ==== Section Title ==== */
+
+.section-title{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 0.5px solid black;
+    margin-bottom: 15px;
+}
+
+/* ==== Section Entries ==== */
+
+.entry{
+    margin-bottom: 18px;
+}
+.entry-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.entry-header h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.date{
+    font-size: 16px;
+}
+
+.subheading{
+    font-size: 14px;
+    font-style: italic;
+    margin: 3px 0px 6px 0;
+}
+
+/* ==== Lists ==== */
+ul {
+    margin: 0;
+    padding-left: 25px;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
