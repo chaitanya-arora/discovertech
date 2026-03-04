@@ -37,7 +37,7 @@ main{
 
 .navbar a:hover{
     background-color: #0F172A;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 /* ==== Heading Section ==== */
@@ -56,14 +56,66 @@ main{
     font-weight: normal;
 }
 
+#heading1{
+    font-size: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+#heading2{
+    font-size: 100px;
+    text-align: center;
+    margin: 5px;
+}
+
+#slogan{
+    text-align: center;
+    color: rgba(255, 255, 255,0.8);
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.button-wrapping{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+#pathways_button{
+    font-size: 20px;
+    background-image: linear-gradient(to right, #DF4F97, #F5971B);
+    color: white;
+    border-color: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#community_button{
+    font-size: 20px;
+    background-image: linear-gradient(to right,#F5971B,#668E3B);
+    color: white;
+    border-color: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* ==== General Elements ==== */
+
+hr {
+    border: none;
+    border-top: 0.5px solid rgba(255, 255, 255,0.3);
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
 .gradient-text {
-    display: inline-block;
     font-size: 25px;
     font-weight: bolder;
     text-align: center;
     padding: 15px;
 
-    background: linear-gradient(to right, #FC0097, #84FF00);
+    background: linear-gradient(to right, #ff00a2, #37ff00);
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 
