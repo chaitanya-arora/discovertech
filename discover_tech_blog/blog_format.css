@@ -159,6 +159,7 @@ main{
     font-weight: normal;
     color: #ffffffcc;
     margin-top: 10px;
+    line-height: 1.7;
 }
 
 /* ==== HOME PAGE: Pathways ==== */
@@ -202,7 +203,7 @@ main{
 }
 
 .container:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -244,6 +245,7 @@ main{
     margin: 0;
     font-size: 15px;
     opacity: 0.85;
+    line-height: 2;
 }
 
 .link-wrapper {
@@ -348,6 +350,17 @@ footer p{
     font-size: 12px;
 }
 
+/* ==== ABOUT PAGE: Heading Section ==== */
+#about-header{
+    font-size: 70px;
+    margin: 0px;
+}
+
+#about-exp{
+    text-align: center;
+    margin: 10px 200px;
+}
+
 /* ==== General Elements ==== */
 
 hr {
@@ -363,6 +376,18 @@ hr {
     padding: 15px;
 
     background: linear-gradient(to right, #ff00a2, #37ff00);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+
+    color: #FC0097; /* fallback color if gradient not supported */
+}
+
+.grad-text-pp {
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px;
+
+    background: linear-gradient(to right, #6f00ff, #ff00a2);
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 
