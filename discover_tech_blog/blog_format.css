@@ -13,6 +13,15 @@ main{
 
 
 /* ==== Navigation Bar ==== */
+.navbar{
+    position: sticky; 
+    top: 0;     
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 0.5px solid rgba(255, 255, 255,0.3);
+}
+
 .navbar ul{
     list-style: none;
     background-color: #1f2e51;
@@ -40,7 +49,7 @@ main{
     border-radius: 25px;
 }
 
-/* ==== Heading Section ==== */
+/* ==== HOME PAGE: Heading Section ==== */
 
 .subheading-wrapper{
     text-align: center;
@@ -103,6 +112,52 @@ main{
     border-color: none;
     border-radius: 10px;
     padding: 10px;
+}
+
+/* ==== HOME PAGE: Statistics ==== */
+#statistics{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.stat-entry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#jobs-added{
+    color: #e76fab;
+}
+
+#salary{
+    color: #f7a842;
+}
+
+#industry-growth{
+    color: #91bc62;
+}
+
+#possibilities{
+    color: #9874ed;
+}
+
+.stat-exp{
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffffcc;
+    margin-top: 10px;
 }
 
 /* ==== General Elements ==== */
