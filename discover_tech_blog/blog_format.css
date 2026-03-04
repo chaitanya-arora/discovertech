@@ -57,12 +57,15 @@ main{
 }
 
 .gradient-text {
-    background: linear-gradient(to right, #fc0097, #84ff00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display: inline-block;
     font-size: 25px;
     font-weight: bolder;
-    padding: 15px;
-    display: block;
     text-align: center;
-  }
+    padding: 15px;
+
+    background: linear-gradient(to right, #FC0097, #84FF00);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+
+    color: #FC0097; /* fallback color if gradient not supported */
+}
