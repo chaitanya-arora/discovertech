@@ -208,32 +208,26 @@ main{
 
 #ai-ml {
     background-color: rgba(134, 93, 231, 0.2) ;
-    border: 1.5px solid #865DE7;
 }
 
 #swe {
     background-color: rgba(245, 151, 27, 0.2) ;
-    border: 1.5px solid #F5971B;
 }
 
 #data {
     background-color: rgba(102, 142, 59, 0.2) ;
-    border: 1.5px solid #668E3B;
 }
 
 #cyber {
     background-color: rgba(102, 142, 59, 0.2) ;
-    border: 1.5px solid #668E3B;
 }
 
 #cloud {
     background-color: rgba(134, 93, 231, 0.2) ;
-    border: 1.5px solid #865DE7;
 }
 
 #ux-ui {
     background-color: rgba(223, 79, 151, 0.2);
-    border: 1.5px solid #DF4F97;
 }
 
 .container i {
@@ -257,6 +251,38 @@ main{
 }
 
 #paths_link {
+    text-decoration: none;
+    color: white;
+}
+
+/* ==== HOME PAGE: Others ==== */
+#others{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #131c31;
+}
+
+#resources {
+    background-color: rgba(245, 151, 27, 0.5) ;
+    border: 1.5px solid #F5971B;
+}
+
+#applications {
+    background-color: rgba(134, 93, 231, 0.5) ;
+    border: 1.5px solid #865DE7;
+}
+
+#discussion {
+    background-color: rgba(223, 79, 151, 0.5);
+    border: 1.5px solid #DF4F97;
+}
+
+#path-containers a {
     text-decoration: none;
     color: white;
 }
