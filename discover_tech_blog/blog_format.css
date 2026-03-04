@@ -49,6 +49,78 @@ main{
     border-radius: 25px;
 }
 
+/* ==== Footer ==== */
+footer{
+    background-color: #131c31;
+    color: #ffffffcc;
+    font-family: sans-serif;
+}
+footer p{
+    margin: 0px;
+}
+
+#footer_text{
+    text-align: center;
+    margin: 0px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 100px; 
+    flex-wrap: wrap; 
+}
+
+#join-form{
+    color: #ffffffcc;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-link i {
+    font-size: 2.5rem;
+    transition: transform 0.2s ease;
+}
+
+.social-link i:hover {
+    transform: scale(1.2);
+}
+
+#icon-email i {
+    color: rgba(223, 79, 151, 0.8); 
+}
+
+#icon-linkedin i {
+    color: rgba(245, 151, 27, 0.8); 
+}
+
+#icon-github i {
+    color: rgba(102, 142, 59, 0.8); 
+}
+
+#copyright {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 12px;
+}
+
+/* ==== ABOUT PAGE: Heading Section ==== */
+#about-header{
+    font-size: 70px;
+    margin: 0px;
+}
+
+#about-exp{
+    text-align: center;
+    margin: 10px 200px;
+}
+
 /* ==== HOME PAGE: Heading Section ==== */
 
 .subheading-wrapper{
@@ -289,76 +361,52 @@ main{
     color: white;
 }
 
-/* ==== Footer ==== */
-footer{
-    background-color: #131c31;
-    color: #ffffffcc;
-    font-family: sans-serif;
-}
-footer p{
-    margin: 0px;
-}
 
-#footer_text{
+/* ==== ABOUT PAGE: Mission, Vision, Values ==== */
+#mvv-containers{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 0px;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0px auto;
 }
 
-.footer-flex {
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-    gap: 100px; 
-    flex-wrap: wrap; 
-}
-
-#join-form{
-    color: #ffffffcc;
-}
-
-#contact {
+.container2{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 300px;
+    height: 200px;
+    
+    border-radius: 25px;
+    padding: 30px;
+    text-align: left;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.social-link i {
-    font-size: 2.5rem;
-    transition: transform 0.2s ease;
+.container2 i {
+    font-size: 45px;
+    margin-bottom: 10px;
 }
 
-.social-link i:hover {
-    transform: scale(1.2);
+#mission {
+    background-color: rgba(223, 79, 151, 0.5);
+    border: 1.5px solid #DF4F97;
 }
 
-#icon-email i {
-    color: rgba(223, 79, 151, 0.8); 
+#vision {
+    background-color: rgba(245, 151, 27, 0.5);
+    border: 1.5px solid #F5971B;
 }
 
-#icon-linkedin i {
-    color: rgba(245, 151, 27, 0.8); 
-}
-
-#icon-github i {
-    color: rgba(102, 142, 59, 0.8); 
-}
-
-#copyright {
-    color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    font-size: 12px;
-}
-
-/* ==== ABOUT PAGE: Heading Section ==== */
-#about-header{
-    font-size: 70px;
-    margin: 0px;
-}
-
-#about-exp{
-    text-align: center;
-    margin: 10px 200px;
+#values {
+    background-color: rgba(102, 142, 59, 0.5);
+    border: 1.5px solid #668E3B;
 }
 
 /* ==== General Elements ==== */
