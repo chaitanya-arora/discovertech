@@ -287,6 +287,68 @@ main{
     color: white;
 }
 
+/* ==== Footer ==== */
+footer{
+    background-color: #131c31;
+    padding: 40px 20px;
+    color: #ffffffcc;
+    font-family: sans-serif;
+}
+footer p{
+    margin: 0px;
+}
+
+#footer_text{
+    text-align: center;
+    margin: 0px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 100px; 
+    flex-wrap: wrap; 
+}
+
+#join-form{
+    color: #ffffffcc;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-link i {
+    font-size: 2.5rem;
+    transition: transform 0.2s ease;
+}
+
+.social-link i:hover {
+    transform: scale(1.2);
+}
+
+#icon-email i {
+    color: rgba(223, 79, 151, 0.8); 
+}
+
+#icon-linkedin i {
+    color: rgba(245, 151, 27, 0.8); 
+}
+
+#icon-github i {
+    color: rgba(102, 142, 59, 0.8); 
+}
+
+#copyright {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 12px;
+}
+
 /* ==== General Elements ==== */
 
 hr {
