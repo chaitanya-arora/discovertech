@@ -397,8 +397,10 @@ footer p{
     border-radius: 25px;
     padding: 30px;
     text-align: left;
+}
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.container2:hover{
+    transform: translateY(-20px);
 }
 
 .container2 i {
@@ -459,6 +461,10 @@ footer p{
     border-radius: 15px;
 }
 
+#reasons i:hover{
+    transform: scale(1.1);
+}
+
 .reason-header{
     font-size: 21px;
     margin: 15px 0px;
@@ -490,9 +496,14 @@ footer p{
     text-align: justify;
     line-height: 1.75;
     
+    background-color: rgba(102, 142, 59, 0.1);
+    border: 1px solid #668E3B;
+    border-radius: 20px;
+}
+
+#story:hover{
     background-color: rgba(102, 142, 59, 0.2);
     border: 2px solid #668E3B;
-    border-radius: 20px;
 }
 
 
