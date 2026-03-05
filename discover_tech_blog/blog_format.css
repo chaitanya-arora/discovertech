@@ -471,6 +471,29 @@ footer p{
     color: rgba(255, 255, 255, 0.7)
 }
 
+/* ==== ABOUT PAGE: Our Story ==== */
+#our-story{
+    margin: 20px;
+}
+
+#story-header{
+    text-align: center;
+    color: #91bc62;
+    font-size: 40px;
+}
+
+#story{
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    
+    text-align: justify;
+    line-height: 1.75;
+    
+    background-color: rgba(102, 142, 59, 0.2);
+    border: 2px solid #668E3B;
+    border-radius: 20px;
+}
 
 
 
