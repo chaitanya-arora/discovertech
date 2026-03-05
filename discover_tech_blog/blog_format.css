@@ -110,16 +110,11 @@ footer p{
     font-size: 12px;
 }
 
-/* ==== ABOUT PAGE: Heading Section ==== */
-#about-header{
-    font-size: 70px;
-    margin: 0px;
-}
 
-#about-exp{
-    text-align: center;
-    margin: 10px 200px;
-}
+
+
+
+
 
 /* ==== HOME PAGE: Heading Section ==== */
 
@@ -347,7 +342,7 @@ footer p{
 }
 
 #applications {
-    background-color: rgba(134, 93, 231, 0.5) ;
+    background-color: rgba(134, 93, 231, 0.5);
     border: 1.5px solid #865DE7;
 }
 
@@ -361,6 +356,23 @@ footer p{
     color: white;
 }
 
+
+
+
+
+
+
+
+/* ==== ABOUT PAGE: Heading Section ==== */
+#about-header{
+    font-size: 70px;
+    margin: 0px;
+}
+
+#about-exp{
+    text-align: center;
+    margin: 10px 200px;
+}
 
 /* ==== ABOUT PAGE: Mission, Vision, Values ==== */
 #mvv-containers{
@@ -408,6 +420,59 @@ footer p{
     background-color: rgba(102, 142, 59, 0.5);
     border: 1.5px solid #668E3B;
 }
+
+/* ==== ABOUT PAGE: Why ==== */
+#why{
+    background-color: #131c31;
+    padding: 30px 20px;
+}
+
+#why-dt-header{
+    color: #865DE7;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+#why-dt-exp{
+    text-align: center;
+    margin: 10px 200px;
+}
+
+#reasons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    padding: 40px 20px;
+    background-color: #131c31;
+}
+
+#reasons i{
+    font-size: 30px;
+    color: rgba(152, 116, 237, 0.7);
+    background-color: rgba(134, 93, 231, 0.2);
+    padding: 15px;
+    border: 1px solid rgba(152, 116, 237, 0.7);
+    border-radius: 15px;
+}
+
+.reason-header{
+    font-size: 21px;
+    margin: 15px 0px;
+}
+
+.reason-exp{
+    font-size: 14px;
+    margin: 0px;
+    width: 250px;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+
+
 
 /* ==== General Elements ==== */
 
