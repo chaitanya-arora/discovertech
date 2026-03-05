@@ -512,11 +512,11 @@ footer p{
 
 
 
-/* ==== FAQ Page: Subscribe Box ==== */ 
+/* ==== SUBSCRIBE PAGE: Subscribe Box ==== */ 
 #subscribe {
     display: flex;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
 }
 
 #sub {
@@ -612,6 +612,19 @@ footer p{
     font-size: 14px;
     text-align: center;
     color: rgba(255,255,255,0.5);
+}
+
+/* ==== SUBSCRIBE PAGE: Sub Statistics ==== */
+#num-subs{
+    color: #91bc62;
+}
+
+#freq{
+    color: #f7a842;
+}
+
+#cost{
+    color: #9874ed;
 }
 
 /* ==== General Elements ==== */
