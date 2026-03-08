@@ -331,35 +331,114 @@
             <p class="path-cat-exp" style="color: rgba(198, 209, 187, 0.7);">Careers that keep systems running reliably, manage cloud platforms, and secure data and applications.</p>
 
             <div class="path-cat">
+                <!-- Cloud Computing -->
                 <div class="infra-card" onClick="openModal('cloudModal')">
                     <i class="fa-solid fa-cloud"></i>
                     <h4 class="path-header">Cloud Computing</h4>
                     <p class="path-exp">Build and manage scalable cloud infrastructure</p>
                 </div>
 
+                <div id="cloudModal" class="modal">
+                    <div class="infra-modal-content">
+                        <span class="close" onclick="closeModal('cloudModal')">&times;</span>
+                        <h2>Cloud Computing</h2>
+                        <p><u>Description:</u> Cloud engineers design, deploy, and maintain cloud infrastructure, ensuring scalability, security, and reliability for applications and services.</p>
+                        <p><u>Recommended Education:</u> Bachelor’s in Computer Science, Information Systems, Cloud Certifications (AWS, Azure, GCP)</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Cloud Platforms (AWS, Azure, GCP)</li>
+                            <li>Networking & Security</li>
+                            <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+                            <li>Linux & Windows Server Administration</li>
+                            <li>Containerization (Docker, Kubernetes)</li>
+                            <li>Monitoring & Optimization</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Cloud Engineer, Cloud Architect, DevOps Engineer, Site Reliability Engineer</p>
+                        <p><u>Good For:</u> Problem-solvers who enjoy managing infrastructure, automating systems, and optimizing cloud-based solutions.</p>
+                    </div>
+                </div>
+
+                <!-- DevOps & SRE -->
                 <div class="infra-card" onClick="openModal('devModal')">
                     <i class="fa-solid fa-chart-line"></i>
                     <h4 class="path-header">DevOps & SRE</h4>
                     <p class="path-exp">Automate and optimize software delivery</p>
                 </div>
 
+                <div id="devModal" class="modal">
+                    <div class="infra-modal-content">
+                        <span class="close" onclick="closeModal('devModal')">&times;</span>
+                        <h2>DevOps & Site Reliability Engineering (SRE)</h2>
+                        <p><u>Description:</u> DevOps and SRE professionals streamline software development and operations, focusing on automation, CI/CD, reliability, and system scalability.</p>
+                        <p><u>Recommended Education:</u> Bachelor’s in CS or related field, DevOps courses/certifications</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>CI/CD Tools (Jenkins, GitHub Actions, GitLab)</li>
+                            <li>Containerization & Orchestration (Docker, Kubernetes)</li>
+                            <li>Monitoring & Logging (Prometheus, Grafana, ELK)</li>
+                            <li>Cloud Platforms (AWS, Azure, GCP)</li>
+                            <li>Scripting (Python, Bash, PowerShell)</li>
+                            <li>Collaboration & Agile Practices</li>
+                        </ul>
+                        <p><u>Common Roles:</u> DevOps Engineer, Site Reliability Engineer, Platform Engineer</p>
+                        <p><u>Good For:</u> Those who love building automation, improving workflows, and ensuring systems are stable and scalable.</p>
+                        <a href="https://www.redhat.com/en/topics/devops">DevOps Learning Resources</a>
+                    </div>
+                </div>
+
+                <!-- Cyber Security -->
                 <div class="infra-card" onClick="openModal('cyberModal')">
                     <i class="fa-solid fa-shield-halved"></i>
                     <h4 class="path-header">Cyber Security</h4>
                     <p class="path-exp">Protect systems, networks, and data from cyber threats</p>
                 </div>
 
+                <div id="cyberModal" class="modal">
+                    <div class="infra-modal-content">
+                        <span class="close" onclick="closeModal('cyberModal')">&times;</span>
+                        <h2>Cyber Security</h2>
+                        <p><u>Description:</u> Cybersecurity professionals protect networks, systems, and data from attacks, vulnerabilities, and unauthorized access, ensuring digital safety. They identify vulnerabilities, implement security measures, and respond to incidents.</p>
+                        <p><u>Recommended Education:</u> Bachelor’s in CS, Cybersecurity, or InfoSec certifications (CompTIA Security+, CEH, CISSP)</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Network Security & Firewalls</li>
+                            <li>Penetration Testing & Ethical Hacking</li>
+                            <li>Threat Analysis & Incident Response</li>
+                            <li>Cryptography & Secure Coding</li>
+                            <li>Compliance & Risk Management</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Security Analyst, Penetration Tester, Security Engineer, Security Consultant</p>
+                        <p><u>Good For:</u> Detail-oriented individuals who enjoy protecting digital assets and analyzing potential threats.</p>
+                        <a href="https://roadmap.sh/cyber-security">Step by Step Cybersecurity Roadmap</a>
+                    </div>
+                </div>
+
+                <!-- Platform Enginner-->
                 <div class="infra-card" onclick="openModal('platformModal')">
                     <i class="fa-solid fa-network-wired"></i>
                     <h4 class="path-header">Platform Engineering</h4>
                     <p class="path-exp">Build internal tools and systems to support other developers</p>
                 </div>
 
-                <div class="infra-card" onclick="openModal('platformModal')">
-                    <i class="fa-solid fa-network-wired"></i>
-                    <h4 class="path-header">Platform Engineering</h4>
-                    <p class="path-exp">Build internal platforms to boost developer productivity</p>
+                <div id="platformModal" class="modal">
+                    <div class="swe-modal-content">
+                        <span class="close" onclick="closeModal('platformModal')">&times;</span>
+                        <h2>Platform Engineering</h2>
+                        <p><u>Description:</u> Platform engineers build internal systems, tools, and frameworks that support development teams, improving productivity and reliability.</p>
+                        <p><u>Recommended Education:</u> Bachelor’s in CS or related field, DevOps and Cloud experience</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Cloud Infrastructure (AWS, GCP, Azure)</li>
+                            <li>Automation & Scripting (Python, Bash)</li>
+                            <li>CI/CD & Pipelines</li>
+                            <li>Monitoring & Observability Tools</li>
+                            <li>Collaboration & System Design</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Platform Engineer, Developer Experience Engineer, Infrastructure Engineer</p>
+                        <p><u>Good For:</u> Problem-solvers who enjoy building scalable developer tools and improving team workflows.</p>
+                    </div>
                 </div>
+
             </div>
             <br><br>
             <hr>

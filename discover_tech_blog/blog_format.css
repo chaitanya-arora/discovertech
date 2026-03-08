@@ -579,6 +579,11 @@ footer p{
     font-size: 30px;
 }
 
+.swe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
 .modal {
     display: none;      
     position: fixed;           
@@ -630,6 +635,11 @@ footer p{
     font-size: 30px;
 }
 
+.ai-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
 .ai-modal-content {
     max-width: 800px;
     width: 90%;
@@ -668,9 +678,21 @@ footer p{
     font-size: 30px;
 }
 
-.card:hover {
+.infra-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.infra-modal-content {
+    max-width: 800px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color:  rgba(102, 142, 59,0.5);
+    border: 1px solid  #668E3B;
+    color: white;
+    line-height: 1.7;
+    position: relative;
 }
 
 .ux-card {
