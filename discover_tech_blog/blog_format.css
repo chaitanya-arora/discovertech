@@ -528,6 +528,35 @@ footer p{
 
 
 
+/* ==== PATHWAYS PAGE: Path Cards ==== */
+.modal-content {
+    max-width: 800px;
+    width: 90%;
+
+    background-color: #1F2A40;
+    padding: 40px;
+
+    border-radius: 20px;
+    border: 2px solid #865DE7;
+
+    color: white;
+    line-height: 1.7;
+}
+
+.close {
+    font-size: 32px;
+    cursor: pointer;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
 /* ==== SUBSCRIBE PAGE: Subscribe Box ==== */ 
 #subscribe {
     display: flex;
@@ -643,6 +672,13 @@ footer p{
     color: #9874ed;
 }
 
+
+
+
+
+
+
+
 /* ==== General Elements ==== */
 
 hr {
@@ -668,6 +704,18 @@ hr {
     padding: 15px;
 
     background: linear-gradient(to right, #6f00ff, #ff00a2);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+
+    color: #FC0097; /* fallback color if gradient not supported */
+}
+
+.grad-text-po {
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px;
+
+    background: linear-gradient(to right, #dd00ff, #ff9100 );
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 

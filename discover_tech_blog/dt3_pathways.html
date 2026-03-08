@@ -37,10 +37,114 @@
         
      </header>
 
-     <main>
-        <h3>This is the Pathways in Tech Page</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo temporibus quod, maiores magnam facilis placeat error recusandae perspiciatis dicta hic inventore eum fuga aut consequuntur, aliquam, tempore natus nostrum at.</p>
-     </main>
+    <!-- Pathways in Tech Page Heading -->
+     <br><br><br><br>
+
+     <h1 class="grad-text-po" id="about-header">Pathways in Tech</h1>
+     <p class="stat-exp" id="about-exp">Explore the <i>diverse career paths</i> available in technology. Click on any pathway to learn more about what it takes to succeed!</p>
+    
+     <br><br><br><br> 
+
+     <!-- Pathway Cards -->
+
+     <section id="pathway-cards">
+        <div class="card" onClick="openModal('aiModal')">
+            <i class="fa-solid fa-brain"></i>
+            <h4 class="path-header">Artificial Intelligence (AI) & Machine Learning (ML)</h4>
+            <p class="path-exp">Build intelligent systems that learn and adapt</p>
+        </div>
+
+        <div class="card" onClick="openModal('sweModal')">
+            <i class="fa-solid fa-code"></i>
+            <h4 class="path-header">Software Engineering</h4>
+            <p class="path-exp">Create applications that power our digital world</p>
+        </div>
+
+        <div class="card" onClick="openModal('dsModal')">
+            <i class="fa-solid fa-microchip"></i>
+            <h4 class="path-header">Data Science & Analytics</h4>
+            <p class="path-exp">Extract insights from data to drive decisions</p>
+        </div>
+
+        <div class="card" onClick="openModal('uxModal')">
+            <i class="fa-solid fa-palette"></i>
+            <h4 class="path-header">UX/UI Design</h4>
+            <p class="path-exp">Design beautiful experiences</p>
+        </div>
+
+        <div class="card" onClick="openModal('cyberModal')">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h4 class="path-header">Cyber Security</h4>
+            <p class="path-exp">Protect systems and data from cyber threats</p>
+        </div>
+
+        <div class="card" onClick="openModal('cloudModal')">
+            <i class="fa-solid fa-cloud"></i>
+            <h4 class="path-header">Cloud Computing</h4>
+            <p class="path-exp">Build and manage scalable cloud infrastructure</p>
+        </div>
+
+        <div class="card" onClick="openModal('frontModal')">
+            <i class="fa-solid fa-laptop"></i>
+            <h4 class="path-header">Frontend Development</h4>
+            <p class="path-exp">Build interactive user interfaces for the web</p>
+        </div>
+
+        <div class="card" onClick="openModal('backModal')">
+            <i class="fa-solid fa-server"></i>
+            <h4 class="path-header">Backend Development</h4>
+            <p class="path-exp">Build the server-side logic and databases</p>
+        </div>
+
+        <div class="card" onClick="openModal('mobileModal')">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h4 class="path-header">Mobile Development</h4>
+            <p class="path-exp">Create apps for iOS and Android devices</p>
+        </div>
+
+        <div class="card" onClick="openModal('gameModal')">
+            <i class="fa-solid fa-gamepad"></i>
+            <h4 class="path-header">Game Development</h4>
+            <p class="path-exp">Create immersive gaming experiences</p>
+        </div>
+
+        <div class="card" onClick="openModal('devModal')">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4 class="path-header">DevOps & SRE</h4>
+            <p class="path-exp">Automate and optimize software delivery</p>
+        </div>
+
+        <div class="card" onClick="openModal('blockModal')">
+            <i class="fa-solid fa-lock"></i>
+            <h4 class="path-header">Blockchain & Web3</h4>
+            <p class="path-exp">Build decentralized applications</p>
+        </div>
+     </section>
+    
+    <!--
+    <div class="modal" id="aiModal">
+        <div class="modal-content">
+    
+            <span class="close" onclick="closeModal('aiModal')">&times;</span>
+    
+            <h2>Artificial Intelligence & Machine Learning</h2>
+    
+            <p>
+            AI and Machine Learning involve building systems that can learn from
+            data and make intelligent decisions. These technologies power things
+            like recommendation systems, voice assistants, self-driving cars,
+            and medical diagnostics.
+            </p>
+    
+            <p>
+            Careers include Machine Learning Engineer, AI Researcher,
+            Data Scientist, and AI Product Manager.
+            </p>
+    
+        </div>
+    </div>
+
+    --> 
  
      <!-- Footer -->
      <footer>
@@ -79,5 +183,17 @@
         <p id="copyright"><i class="fa-regular fa-copyright"></i>2026 DiscoverTech. Built for students, by students who love tech.</p>
         <br><br>
      </footer>
+
+     <!-- JavaScript - Open and Close Explanation Box for Each Pathway Container-->
+     <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "flex";
+        }
+        
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        </script>
+
 </body>
 </html>
