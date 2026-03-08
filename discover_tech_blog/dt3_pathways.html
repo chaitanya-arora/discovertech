@@ -56,6 +56,7 @@
             <h2 class="path-cat-header" style="color: #f7a842;">Software Engineering</h2>
             <p class="path-cat-exp" style="color: rgba(248, 230, 206, 0.7);">Careers focused on designing, building, and maintaining software systems for web, mobile, and games.</p>
 
+            <!-- Frontend Development -->
             <div class="path-cat">
                 <div class="swe-card" onClick="openModal('frontModal')">
                     <i class="fa-solid fa-laptop"></i>
@@ -63,28 +64,135 @@
                     <p class="path-exp">Build interactive user interfaces for the web</p>
                 </div>
 
+                <div id="frontModal" class="swe-modal">
+                    <div class="swe-modal-content">
+                        <span class="close" onclick="closeModal('frontModal')">&times;</span>
+                        <h2>Frontend Development</h2>
+                        <p><u>Description:</u> Frontend developers build the user-facing part of websites and applications, ensuring they are visually appealing, interactive, and responsive across devices.</p>
+                        <p><u>Recommended Education:</u> Bachelor’s in Computer Science, Web Development Bootcamps, or self-taught with portfolio.</p>
+                        <p><u>Key Skills:</u> </p>
+                        <ul>
+                            <li>HTML/CSS/JavaScript</li>
+                            <li>React/Vue/Angular</li>
+                            <li>TypeScript</li>
+                            <li>Responsive Design</li>
+                            <li>Accessibility</li>
+                            <li>Performance</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Frontend Engineer, UI Developer, Web Developer.</p>
+                        <p><u>Good For:</u> Creatives who enjoy coding visual experiences and building user interfaces that people interact with.</p>
+                        <a href="https://roadmap.sh/frontend" target="_blank">Step by Step Frontend Development Roadmap</a>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
                 <div class="swe-card" onClick="openModal('backModal')">
                     <i class="fa-solid fa-server"></i>
                     <h4 class="path-header">Backend Development</h4>
                     <p class="path-exp">Build the server-side logic and databases</p>
                 </div>
 
+                <div id="backModal" class="swe-modal">
+                    <div class="swe-modal-content">
+                        <span class="close" onclick="closeModal('backModal')">&times;</span>
+                        <h2>Backend Development</h2>
+                        <p><u>Description:</u> Backend developers handle the server-side logic, databases, and APIs that power web applications and ensure data flows correctly between front and back ends.</p>
+                        <p><u>Recommended Education:</u> Bachelor’s in Computer Science, Software Engineering, or self-taught with backend project experience.</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Node.js, Python, Java, Ruby, or PHP</li>
+                            <li>Databases: SQL & NoSQL</li>
+                            <li>RESTful APIs & GraphQL</li>
+                            <li>Authentication & Authorization</li>
+                            <li>Cloud & Server Management</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Backend Engineer, API Developer, Database Developer, Systems Architect.</p>
+                        <p><u>Good For:</u> Problem-solvers who enjoy building logical systems behind the scenes and managing data.</p>
+                        <a href="https://roadmap.sh/backend" target="_blank">Step by Step Backend Development Roadmap</a>
+                    </div>
+                </div>
+
+                <!-- Full Stack Development -->
                 <div class="swe-card" onClick="openModal('fullModal')">
                     <i class="fa-solid fa-code"></i>
                     <h4 class="path-header">Full Stack Development</h4>
                     <p class="path-exp">Work on both frontend and backend to create complete applications</p>
                 </div>
+                
+                <div id="fullModal" class="swe-modal">
+                    <div class="swe-modal-content">
+                        <span class="close" onclick="closeModal('fullModal')">&times;</span>
+                        <h2>Full Stack Development</h2>
+                        <p><u>Description:</u> Full Stack Developers work on both frontend and backend, creating complete web applications, bridging design and server-side logic.</p>
+                        <p><u>Recommended Education:</u> Bachelor’s in Computer Science, bootcamps covering full stack, or self-taught with projects demonstrating both frontend and backend skills.</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Frontend: HTML/CSS/JS, React/Vue/Angular</li>
+                            <li>Backend: Node.js, Python, Java, Ruby</li>
+                            <li>Databases & API design</li>
+                            <li>Version Control (Git)</li>
+                            <li>Deployment & Cloud</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Full Stack Developer, Web Developer, Application Engineer.</p>
+                        <p><u>Good For:</u> Developers who like working on all aspects of a project, from UI to server infrastructure.</p>
+                        <a href="https://roadmap.sh/full-stack" target="_blank">Step by Step Full Stack Development Roadmap</a>
+                    </div>
+                </div>
 
+                <!-- Mobile Development -->
                 <div class="swe-card" onClick="openModal('mobileModal')">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <h4 class="path-header">Mobile Development</h4>
                     <p class="path-exp">Create apps for iOS and Android devices</p>
                 </div>
 
+                <div id="mobileModal" class="swe-modal">
+                    <div class="swe-modal-content">
+                        <span class="close" onclick="closeModal('mobileModal')">&times;</span>
+                        <h2>Mobile Development</h2>
+                        <p><u>Description:</u> Mobile developers create applications for iOS and Android, optimizing for device performance, touch interactions, and platform guidelines.</p>
+                        <p><u>Recommended Education:</u> CS degree, mobile app bootcamps, or self-taught with portfolio.</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Swift (iOS) / Kotlin (Android)</li>
+                            <li>React Native / Flutter</li>
+                            <li>UI/UX for mobile</li>
+                            <li>APIs & data management</li>
+                            <li>Testing & debugging on multiple devices</li>
+                        </ul>
+                        <p><u>Common Roles:</u> iOS Developer, Android Developer, Cross-platform Developer.</p>
+                        <p><u>Good For:</u> Developers who love building apps for users to interact with on their phones and tablets.</p>
+                        <a href="https://roadmap.sh/ios" target="_blank">Step by Step iOS Development Roadmap</a><br>
+                        <a href="https://roadmap.sh/android" target="_blank">Step by Step Android Development Roadmap</a>
+                    </div>
+                </div>
+                
+                <!-- Game Development -->
                 <div class="swe-card" onClick="openModal('gameModal')">
                     <i class="fa-solid fa-gamepad"></i>
                     <h4 class="path-header">Game Development</h4>
                     <p class="path-exp">Create immersive gaming experiences</p>
+                </div>
+
+                <div id="gameModal" class="swe-modal">
+                    <div class="swe-modal-content">
+                        <span class="close" onclick="closeModal('gameModal')">&times;</span>
+                        <h2>Game Development</h2>
+                        <p><u>Description:</u> Game developers design and build interactive gaming experiences for consoles, PCs, and mobile devices, including graphics, mechanics, and gameplay.</p>
+                        <p><u>Recommended Education:</u> CS degree, Game Development programs, or self-taught with portfolio.</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>C++, C#</li>
+                            <li>Unity, Unreal Engine</li>
+                            <li>Game Mechanics & Physics</li>
+                            <li>3D Modeling & Animation</li>
+                            <li>AI for NPCs & Gameplay</li>
+                            <li>Optimization & Performance</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Game Developer, Game Designer, Graphics Programmer.</p>
+                        <p><u>Good For:</u> Creative coders who love interactive media, storytelling, and immersive experiences.</p>
+                        <a href="https://www.gamedev.net/">GameDev Resources</a>
+                    </div>
                 </div>
             </div>
             <br><br>
@@ -239,31 +347,6 @@
 
         <br><br>
      </section>
-    
-    <!--
-    <div class="modal" id="aiModal">
-        <div class="modal-content">
-    
-            <span class="close" onclick="closeModal('aiModal')">&times;</span>
-    
-            <h2>Artificial Intelligence & Machine Learning</h2>
-    
-            <p>
-            AI and Machine Learning involve building systems that can learn from
-            data and make intelligent decisions. These technologies power things
-            like recommendation systems, voice assistants, self-driving cars,
-            and medical diagnostics.
-            </p>
-    
-            <p>
-            Careers include Machine Learning Engineer, AI Researcher,
-            Data Scientist, and AI Product Manager.
-            </p>
-    
-        </div>
-    </div>
-
-    --> 
  
      <!-- Footer -->
      <footer>
@@ -312,7 +395,7 @@
         function closeModal(id) {
             document.getElementById(id).style.display = "none";
         }
-        </script>
+    </script>
 
 </body>
 </html>

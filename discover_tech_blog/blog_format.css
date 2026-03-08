@@ -579,6 +579,31 @@ footer p{
     font-size: 30px;
 }
 
+.swe-modal {
+    display: none;      
+    position: fixed;           
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;   
+    align-items: center;
+    background-color: rgba(0,0,0,0.97); 
+    z-index: 9999;
+}
+
+.swe-modal-content {
+    max-width: 800px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(245, 151, 27, 0.5) ;
+    border: 1.5px solid #F5971B;
+    color: white;
+    line-height: 1.7;
+    position: relative;
+}
+
 .ai-card {
     display: flex;
     flex-direction: column;
@@ -662,24 +687,12 @@ footer p{
     font-size: 30px;
 }
 
-.modal-content {
-    max-width: 800px;
-    width: 90%;
-
-    background-color: #1F2A40;
-    padding: 40px;
-
-    border-radius: 20px;
-    border: 2px solid #865DE7;
-
-    color: white;
-    line-height: 1.7;
-}
-
 .close {
     font-size: 32px;
     cursor: pointer;
-    float: right;
+    position: absolute;
+    top: 15px;
+    right: 20px;
 }
 
 
@@ -848,7 +861,7 @@ hr {
     text-align: center;
     padding: 15px;
 
-    background: linear-gradient(to right, #dd00ff, #ff9100 );
+    background: linear-gradient(to right, #dd00ff, #ffb700 );
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 
