@@ -721,6 +721,23 @@ footer p{
     font-size: 30px;
 }
 
+.ux-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.ux-modal-content {
+    max-width: 800px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(223, 79, 151, 0.5);
+    border: 1.5px solid #DF4F97;
+    color: white;
+    line-height: 1.7;
+    position: relative;
+}
+
 .close {
     font-size: 32px;
     cursor: pointer;
