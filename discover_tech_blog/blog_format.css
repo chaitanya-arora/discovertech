@@ -553,21 +553,21 @@ footer p{
     margin: 0px 90px;
 }
 
-.card {
+.swe-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 
     width: 350px;
-    height: 150px;
+    height: 120px;
 
     border-radius: 25px;
     padding: 30px;
     text-align: left;
 
-    background-color: #1F2A40;
-    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgba(245, 151, 27, 0.5) ;
+    border: 1.5px solid #F5971B;
 
     color: white;
     cursor: pointer;
@@ -575,13 +575,91 @@ footer p{
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card i{
+.swe-card i{
+    font-size: 30px;
+}
+
+.ai-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 350px;
+    height: 130px;
+
+    border-radius: 25px;
+    padding: 30px;
+    text-align: left;
+
+    background-color: rgba(134, 93, 231, 0.5);
+    border: 1.5px solid #865DE7;
+
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-card i{
+    font-size: 30px;
+}
+
+.infra-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 350px;
+    height: 130px;
+
+    border-radius: 25px;
+    padding: 30px;
+    text-align: left;
+
+    background-color:  rgba(102, 142, 59,0.5);
+    border: 1px solid  #668E3B;
+
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.infra-card i{
     font-size: 30px;
 }
 
 .card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.ux-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 350px;
+    height: 130px;
+
+    border-radius: 25px;
+    padding: 30px;
+    text-align: left;
+
+    background-color: rgba(223, 79, 151, 0.5);
+    border: 1.5px solid #DF4F97;
+
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ux-card i{
+    font-size: 30px;
 }
 
 .modal-content {
