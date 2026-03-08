@@ -529,6 +529,28 @@ footer p{
 
 
 /* ==== PATHWAYS PAGE: Path Cards ==== */
+#path-header{
+    font-size: 70px;
+    margin: 0px;
+}
+
+.path-header-exp{
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffffcc;
+    margin: 10px 60px 0px 60px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+#list-of-path-cats{
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffffcc;
+    margin: 10px 400px 40px 400px;
+    line-height: 1.7;
+}
+
 .pathway-cards {
     max-width: 1200px;
     margin: 0 auto;
@@ -733,6 +755,53 @@ footer p{
     border-radius: 20px;
     background-color: rgba(223, 79, 151, 0.5);
     border: 1.5px solid #DF4F97;
+    color: white;
+    line-height: 1.7;
+    position: relative;
+}
+
+#em{
+    background-color: rgba(79, 124, 172, 0.2);
+}
+
+.em-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 350px;
+    height: 130px;
+
+    border-radius: 25px;
+    padding: 30px;
+    text-align: left;
+
+    background-color: rgba(79, 124, 172, 0.5);
+    border: 1.5px solid #4F7CAC;
+
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.em-card i{
+    font-size: 30px;
+}
+
+.em-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.em-modal-content {
+    max-width: 800px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(79, 124, 172, 0.5);
+    border: 1.5px solid #4F7CAC;
     color: white;
     line-height: 1.7;
     position: relative;

@@ -40,8 +40,18 @@
     <!-- Pathways in Tech Page Heading -->
      <br><br><br><br>
 
-     <h1 class="grad-text-po" id="about-header">Pathways in Tech</h1>
-     <p class="stat-exp" id="about-exp">Explore the <i>diverse career paths</i> available in technology. Click on any pathway to learn more about what it takes to succeed!</p>
+     <h1 class="grad-text-po" id="path-header">Pathways in Tech</h1>
+     <p class="path-header-exp">Tech has something for everyone! Whether you're interested in design games or building the next LLM, there are endless pathways. The five main areas are:</p>
+     <ul id="list-of-path-cats">
+        <li><span style="color: #f7a842;">Software Engineering</span> - building the apps, websites, and games people use</li>
+        <li><span style="color: #9874ed;">Artificial Intelligence & Data</span> - turning data into insights and intelligent systems</li>
+        <li><span style="color: #91bc62;">Infrastructure & Systems</span> - running, scaling, and securing the platforms behind the software</li>
+        <li><span style="color: #e76fab;">Design & Product</span> - shaping how products look, feel, and solve user problems</li>
+        <li><span style="color: #4F7CAC">Emerging Technology</span> - developing cutting-edge tech that defines the future</li>
+    </ul>
+     <p class="path-header-exp">These areas work together to give us an end product. Design shapes the experience, software engineering builds the product, AI and data add intelligence, infrastructure keeps everything running reliably, and emerging technologies push the boundaries of what’s possible.</p>
+
+
     
      <br><br><br><br> 
 
@@ -516,23 +526,23 @@
         <br>
 
         <!-- Emerging Technology -->
-        <section id="swe">
+        <section id="em">
             <hr>
             <br><br>
-            <h2 class="path-cat-header" style="color: #f7a842;">Emerging Technology</h2>
-            <p class="path-cat-exp" style="color: rgba(248, 230, 206, 0.7);">New and future-focused tech fields shaping the digital world.</p>
+            <h2 class="path-cat-header" style="color: #4F7CAC;">Emerging Technology</h2>
+            <p class="path-cat-exp" style="color: rgba(79, 124, 172, 0.7);">New and future-focused tech fields shaping the digital world.</p>
 
             <div class="path-cat">
 
                 <!-- Robotics -->
-                <div class="swe-card" onclick="openModal('roboticsModal')">
+                <div class="em-card" onclick="openModal('roboticsModal')">
                     <i class="fa-solid fa-robot"></i>
                     <h4 class="path-header">Robotics Engineering</h4>
                     <p class="path-exp">Develop intelligent machines and automation systems</p>
                 </div>
 
                 <div id="roboticsModal" class="modal" style="display:none; justify-content:center; align-items:center;">
-                    <div class="swe-modal-content">
+                    <div class="em-modal-content">
                         <span class="close" onclick="closeModal('roboticsModal')">&times;</span>
                         <h2>Robotics Engineering</h2>
                         <p><u>Description:</u> Robotics engineers design, build, and maintain intelligent machines and automated systems for manufacturing, healthcare, research, and consumer applications.</p>
@@ -551,14 +561,14 @@
                 </div>
 
                 <!-- Embedded Systems & IoT-->
-                <div class="swe-card" onclick="openModal('iotModal')">
+                <div class="em-card" onclick="openModal('iotModal')">
                     <i class="fa-solid fa-microchip"></i>
                     <h4 class="path-header">Embedded Systems & IoT</h4>
                     <p class="path-exp">Create software for smart, connected devices</p>
                 </div>
 
                 <div id="iotModal" class="modal" style="display:none; justify-content:center; align-items:center;">
-                    <div class="swe-modal-content">
+                    <div class="em-modal-content">
                         <span class="close" onclick="closeModal('iotModal')">&times;</span>
                         <h2>Embedded Systems & IoT</h2>
                         <p><u>Description:</u> Embedded systems engineers develop software for devices with dedicated functions, often connected to the internet, such as smart appliances, sensors, and industrial machines.</p>
@@ -577,14 +587,14 @@
                 </div>
 
                 <!-- AR & VR -->
-                <div class="swe-card" onclick="openModal('arvrModal')">
+                <div class="em-card" onclick="openModal('arvrModal')">
                     <i class="fa-solid fa-vr-cardboard"></i>
                     <h4 class="path-header">AR / VR Development</h4>
                     <p class="path-exp">Build immersive augmented and virtual experiences</p>
                 </div>
 
                 <div id="arvrModal" class="modal" style="display:none; justify-content:center; align-items:center;">
-                    <div class="swe-modal-content">
+                    <div class="em-modal-content">
                         <span class="close" onclick="closeModal('arvrModal')">&times;</span>
                         <h2>AR / VR Development</h2>
                         <p><u>Description:</u> AR/VR developers create immersive digital experiences using augmented reality (AR) and virtual reality (VR) technologies for games, training, simulations, and interactive media.</p>
@@ -603,14 +613,14 @@
                 </div>
 
                 <!-- Blockchain -->
-                <div class="swe-card" onclick="openModal('blockModal')">
+                <div class="em-card" onclick="openModal('blockModal')">
                     <i class="fa-solid fa-link"></i>
                     <h4 class="path-header">Blockchain & Web3</h4>
                     <p class="path-exp">Develop decentralized and blockchain-based applications</p>
                 </div>
 
                 <div id="blockModal" class="modal" style="display:none; justify-content:center; align-items:center;">
-                    <div class="swe-modal-content">
+                    <div class="em-modal-content">
                         <span class="close" onclick="closeModal('blockModal')">&times;</span>
                         <h2>Blockchain & Web3</h2>
                         <p><u>Description:</u> Blockchain and Web3 developers build decentralized applications, smart contracts, and infrastructure for cryptocurrencies, NFTs, and distributed systems.</p>
