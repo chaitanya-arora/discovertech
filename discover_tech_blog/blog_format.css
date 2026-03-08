@@ -529,6 +529,11 @@ footer p{
 
 
 /* ==== PATHWAYS PAGE: Subjects-Paths Table ==== */
+#subj-path-table{
+    background-color: #131c31;
+    padding: 30px 20px;
+}
+
 table {
     width: 100%;
     max-width: 1200px;
@@ -553,7 +558,7 @@ tbody td {
 
 /* ==== PATHWAYS PAGE: Path Cards ==== */
 #path-header{
-    font-size: 70px;
+    font-size: 80px;
     margin: 0px;
 }
 
