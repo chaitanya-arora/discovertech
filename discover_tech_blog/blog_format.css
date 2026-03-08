@@ -537,7 +537,7 @@ footer p{
 
 .path-cat-header{
     font-size: 28px;
-    margin: 10px 90px;
+    margin: 20px 90px;
 }
 
 .path-cat-exp{
@@ -579,7 +579,7 @@ footer p{
     font-size: 30px;
 }
 
-.swe-modal {
+.modal {
     display: none;      
     position: fixed;           
     top: 0;
@@ -628,6 +628,18 @@ footer p{
 
 .ai-card i{
     font-size: 30px;
+}
+
+.ai-modal-content {
+    max-width: 800px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(134, 93, 231, 0.5);
+    border: 1.5px solid #865DE7;
+    color: white;
+    line-height: 1.7;
+    position: relative;
 }
 
 .infra-card {

@@ -64,7 +64,7 @@
                     <p class="path-exp">Build interactive user interfaces for the web</p>
                 </div>
 
-                <div id="frontModal" class="swe-modal">
+                <div id="frontModal" class="modal">
                     <div class="swe-modal-content">
                         <span class="close" onclick="closeModal('frontModal')">&times;</span>
                         <h2>Frontend Development</h2>
@@ -92,7 +92,7 @@
                     <p class="path-exp">Build the server-side logic and databases</p>
                 </div>
 
-                <div id="backModal" class="swe-modal">
+                <div id="backModal" class="modal">
                     <div class="swe-modal-content">
                         <span class="close" onclick="closeModal('backModal')">&times;</span>
                         <h2>Backend Development</h2>
@@ -119,7 +119,7 @@
                     <p class="path-exp">Work on both frontend and backend to create complete applications</p>
                 </div>
                 
-                <div id="fullModal" class="swe-modal">
+                <div id="fullModal" class="modal">
                     <div class="swe-modal-content">
                         <span class="close" onclick="closeModal('fullModal')">&times;</span>
                         <h2>Full Stack Development</h2>
@@ -146,7 +146,7 @@
                     <p class="path-exp">Create apps for iOS and Android devices</p>
                 </div>
 
-                <div id="mobileModal" class="swe-modal">
+                <div id="mobileModal" class="modal">
                     <div class="swe-modal-content">
                         <span class="close" onclick="closeModal('mobileModal')">&times;</span>
                         <h2>Mobile Development</h2>
@@ -174,7 +174,7 @@
                     <p class="path-exp">Create immersive gaming experiences</p>
                 </div>
 
-                <div id="gameModal" class="swe-modal">
+                <div id="gameModal" class="modal">
                     <div class="swe-modal-content">
                         <span class="close" onclick="closeModal('gameModal')">&times;</span>
                         <h2>Game Development</h2>
@@ -191,7 +191,7 @@
                         </ul>
                         <p><u>Common Roles:</u> Game Developer, Game Designer, Graphics Programmer.</p>
                         <p><u>Good For:</u> Creative coders who love interactive media, storytelling, and immersive experiences.</p>
-                        <a href="https://www.gamedev.net/">GameDev Resources</a>
+                        <a href="https://roadmap.sh/game-developer">Step by Step Game Development Roadmap</a>
                     </div>
                 </div>
             </div>
@@ -208,6 +208,7 @@
             <h2 class="path-cat-header" style="color: #9874ed;">AI & Data</h2>
             <p class="path-cat-exp" style="color: rgba(217, 209, 237, 0.7);">Careers focused on building intelligent systems, analyzing data, and designing pipelines for insights.</p>
 
+            <!-- AI & ML -->
             <div class="path-cat">
                 <div class="ai-card" onClick="openModal('aiModal')">
                     <i class="fa-solid fa-brain"></i>
@@ -215,22 +216,105 @@
                     <p class="path-exp">Build intelligent systems that learn and adapt</p>
                 </div>
 
+                <div id="aiModal" class="modal">
+                    <div class="ai-modal-content">
+                        <span class="close" onclick="closeModal('aiModal')">&times;</span>
+                        <h2>Artificial Intelligence (AI) & Machine Learning (ML)</h2>
+                        <p><u>Description:</u> AI & ML professionals build systems that can learn, predict, and adapt from data, enabling smart automation and insights.</p>
+                        <p><u>Recommended Education:</u> CS, AI, or Data Science degrees; ML bootcamps; online courses (Coursera, Udacity).</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Python, R, or Julia</li>
+                            <li>Machine Learning Algorithms</li>
+                            <li>Deep Learning (TensorFlow, PyTorch)</li>
+                            <li>Data Wrangling, Preprocessing & Analysis</li>
+                            <li>Statistics & Probability</li>
+                            <li>Neural Networks</li>
+                        </ul>
+                        <p><u>Common Roles:</u> ML Engineer, AI Researcher, Data Scientist.</p>
+                        <p><u>Good For:</u> Mathematically-minded problem solvers interested in building intelligent systems.</p>
+                        <a href="https://roadmap.sh/ai-engineer">Step by Step AI Engineer Roadmap</a><br>
+                        <a href="https://roadmap.sh/machine-learning">Step by Step Machine Learning Engineer Roadmap</a>
+                    </div>
+                </div>
+
+                <!-- Prompt Engineer -->
                 <div class="ai-card" onclick="openModal('promptEngModal')">
                     <i class="fa-solid fa-keyboard"></i>
                     <h4 class="path-header">AI Prompt Engineering</h4>
                     <p class="path-exp">Design effective prompts for AI tools and models</p>
                 </div>
 
+                <div id="promptEngModal" class="modal">
+                    <div class="ai-modal-content">
+                        <span class="close" onclick="closeModal('promptEngModal')">&times;</span>
+                        <h2>AI Prompt Engineering</h2>
+                        <p><u>Description:</u> Prompt engineers design effective inputs for AI models to generate accurate, relevant, and creative outputs.</p>
+                        <p><u>Recommended Education:</u> CS, AI courses, or experience using AI tools; self-learning with LLM experimentation.</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Understanding of LLMs (GPT, Claude, etc.)</li>
+                            <li>Natural Language Processing basics</li>
+                            <li>Prompt design & optimization</li>
+                            <li>Problem-solving and creativity</li>
+                        </ul>
+                        <p><u>Common Roles:</u> AI Prompt Engineer, AI Solutions Specialist.</p>
+                        <p><u>Good For:</u> Creative thinkers and problem solvers who like leveraging AI to improve workflows or create content.</p>
+                        <a href="https://roadmap.sh/prompt-engineering">Step by Step Prompt Engineering Roadmap</a>
+                    </div>
+                </div>
+                
+                <!-- Data Science & Analytics-->
                 <div class="ai-card" onClick="openModal('dsModal')">
                     <i class="fa-solid fa-microchip"></i>
                     <h4 class="path-header">Data Science & Analytics</h4>
                     <p class="path-exp">Extract insights from data to drive decisions</p>
                 </div>
 
+                <div id="dsModal" class="modal">
+                    <div class="ai-modal-content">
+                        <span class="close" onclick="closeModal('dsModal')">&times;</span>
+                        <h2>Data Science & Analytics</h2>
+                        <p><u>Description:</u> Data Scientists analyze and interpret data to provide actionable insights, often building predictive models and dashboards.</p>
+                        <p><u>Recommended Education:</u> CS, Statistics, Data Science degrees; bootcamps or self-taught projects.</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>Python/R, SQL</li>
+                            <li>Data Visualization (Tableau, PowerBI)</li>
+                            <li>Machine Learning & Statistics</li>
+                            <li>Data Cleaning & ETL</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Data Scientist, Data Analyst, Business Intelligence Analyst.</p>
+                        <p><u>Good For:</u> Analytical minds who enjoy turning raw data into insights.</p>
+                        <a href="https://roadmap.sh/data-analyst">Step by Step Data Science & Analytics Roadmap</a>
+                    </div>
+                </div>
+
+                <!-- Data Engineering -->
                 <div class="ai-card" onClick="openModal('deModal')">
                     <i class="fa-solid fa-microchip"></i>
                     <h4 class="path-header">Data Engineering</h4>
                     <p class="path-exp">Build pipelines and infrastructure to manage data</p>
+                </div>
+
+                <div id="deModal" class="modal">
+                    <div class="ai-modal-content">
+                        <span class="close" onclick="closeModal('deModal')">&times;</span>
+                        <h2>Data Engineering</h2>
+                        <p><u>Description:</u> Data Engineers build and maintain pipelines, ensuring that data is stored, processed, and available for analysis efficiently and reliably.</p>
+                        <p><u>Recommended Education:</u> CS or Data Engineering degrees, or self-taught with ETL projects.</p>
+                        <p><u>Key Skills:</u></p>
+                        <ul>
+                            <li>SQL & NoSQL databases</li>
+                            <li>ETL Tools (Airflow, dbt)</li>
+                            <li>Cloud platforms (AWS, GCP, Azure)</li>
+                            <li>Python, Java, or Scala</li>
+                            <li>Data Warehousing & Pipeline Design</li>
+                        </ul>
+                        <p><u>Common Roles:</u> Data Engineer, ETL Developer, Big Data Engineer.</p>
+                        <p><u>Good For:</u> Developers who enjoy building infrastructure and handling large-scale data workflows.</p>
+                        <a href="https://roadmap.sh/data-engineer">Step by Step Data Engineering Roadmap</a>
+                    </div>
                 </div>
             </div>
             <br><br>
