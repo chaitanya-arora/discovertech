@@ -72,10 +72,22 @@
             <button class="subj" data-subject="eng">🔧 Electronics & Engineering</button>
         </div>
 
-        <div id="recommendation-box">
-            <h3>Recommended Pathway</h3>
-            <p id="result">Select subjects to see your best tech pathway.</p>
-        </div>
+        <div id="recommendation-box" aria-live="polite">
+            <div id="rec-content">
+              <div id="rec-label">✦ Your Best Match</div>
+              <div id="rec-top">
+                <span id="rec-top-name">—</span>
+              </div>
+              <div id="rec-runner-up">
+                <span id="rec-runner-label">Runner-up: </span>
+                <span id="rec-runner-name">—</span>
+              </div>
+              <p id="rec-desc"></p>
+              <a id="rec-scroll-btn" href="#" onclick="return false;">
+                Explore this pathway ↓
+              </a>
+            </div>
+          </div>
 
         <table border="1" align="center">
             <thead align="center">
@@ -818,52 +830,103 @@
             });
         });
 
-        function calculatePathway(){
+        
+        const PATHWAYS = {
+        software: {
+            name: "Software Engineering",
+            color: "#f7a842",
+            gradient: "linear-gradient(135deg, #f7a842, #e06030)",
+            shadow: "rgba(247,168,66,0.3)",
+            desc: "You love building things people use. From web apps and mobile tools to games, this pathway is all about turning ideas into real, working software.",
+            scrollTo: "#swe"
+        },
+        ai: {
+            name: "AI & Data",
+            color: "#9874ed",
+            gradient: "linear-gradient(135deg, #9874ed, #5e3bbf)",
+            shadow: "rgba(152,116,237,0.3)",
+            desc: "You're drawn to patterns, prediction, and intelligence. This pathway covers machine learning, data pipelines, and building systems that think.",
+            scrollTo: "#ai-ml"
+        },
+        infra: {
+            name: "Infrastructure & Systems",
+            color: "#91bc62",
+            gradient: "linear-gradient(135deg, #91bc62, #4a7a20)",
+            shadow: "rgba(145,188,98,0.3)",
+            desc: "You like knowing how things work under the hood. Cloud platforms, cybersecurity, and DevOps keep the digital world running reliably.",
+            scrollTo: "#cyber"
+        },
+        design: {
+            name: "Design & Product",
+            color: "#e76fab",
+            gradient: "linear-gradient(135deg, #e76fab, #c0336a)",
+            shadow: "rgba(231,111,171,0.3)",
+            desc: "You blend creativity with strategy. Whether it's UX, UI, or product management, you shape how technology feels and works for real people.",
+            scrollTo: "#ux-ui"
+        },
+        emerging: {
+            name: "Emerging Technology",
+            color: "#8bb2db",
+            gradient: "linear-gradient(135deg, #8bb2db, #3a6fa8)",
+            shadow: "rgba(139,178,219,0.3)",
+            desc: "You want to work on what's next. Robotics, AR/VR, blockchain, and IoT — this pathway is for those who want to build the future before anyone else.",
+            scrollTo: "#em"
+        }
+        };
 
-            const scores = {
-                software:0,
-                ai:0,
-                infra:0,
-                design:0,
-                emerging:0
-            };
+        function calculatePathway() {
 
-            selectedSubjects.forEach(subject => {
+        const scores = { software: 0, ai: 0, infra: 0, design: 0, emerging: 0 };
 
-                scores.software += document.querySelectorAll(".check-swe-" + subject).length;
-                scores.ai += document.querySelectorAll(".check-ai-" + subject).length;
-                scores.infra += document.querySelectorAll(".check-infra-" + subject).length;
-                scores.design += document.querySelectorAll(".check-ux-" + subject).length;
-                scores.emerging += document.querySelectorAll(".check-emg-" + subject).length;
+        selectedSubjects.forEach(subject => {
+            scores.software += document.querySelectorAll(".check-swe-"   + subject).length;
+            scores.ai       += document.querySelectorAll(".check-ai-"    + subject).length;
+            scores.infra    += document.querySelectorAll(".check-infra-" + subject).length;
+            scores.design   += document.querySelectorAll(".check-ux-"    + subject).length;
+            scores.emerging += document.querySelectorAll(".check-emg-"   + subject).length;
+        });
 
-            });
+        const recBox = document.getElementById("recommendation-box");
 
-            const recBox = document.getElementById("recommendation-box");
-            if(selectedSubjects.length === 0){
-                recBox.style.display = "none"; // hide when nothing selected
-                return;
-            } else {
-                recBox.style.display = "block"; // show when at least one selected
-            }
+        // Hide when nothing selected
+        if (selectedSubjects.length === 0) {
+            recBox.style.display = "none";
+            return;
+        }
 
-            const best = Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+        const ranked  = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+        const topKey    = ranked[0][0];
+        const runnerKey = ranked[1][0];
 
-            if(best[0][1] === 0){
-                result.innerText = "Select subjects to see your best tech pathway.";
-                return;
-            }
+        const top    = PATHWAYS[topKey];
+        const runner = PATHWAYS[runnerKey];
 
-            const pathwayNames = {
-                software:"Software Engineering",
-                ai:"AI & Data",
-                infra:"Infrastructure & Systems",
-                design:"Design & Product",
-                emerging:"Emerging Technology"
-            };
+        // Update text
+        document.getElementById("rec-top-name").textContent    = top.name;
+        document.getElementById("rec-top-name").style.color    = top.color;
+        document.getElementById("rec-runner-name").textContent = runner.name;
+        document.getElementById("rec-runner-name").style.color = runner.color;
+        document.getElementById("rec-desc").textContent        = top.desc;
 
-            result.innerText =
-            "Best Match(es): " + pathwayNames[best[0][0]] + 
-            " | Second Match: " + pathwayNames[best[1][0]];
+        // Update scroll button colour + behaviour
+        const btn = document.getElementById("rec-scroll-btn");
+        btn.style.background = top.color;
+        btn.onclick = () => {
+            document.querySelector(top.scrollTo)
+            ?.scrollIntoView({ behavior: "smooth", block: "start" });
+            return false;
+        };
+
+        // Update glowing border to match top pathway
+        recBox.style.background = top.gradient;
+        recBox.style.boxShadow  = `0 0 48px ${top.shadow}`;
+
+        // Re-trigger the fade-in animation each time subjects change
+        recBox.style.display   = "none";
+        recBox.style.animation = "none";
+        recBox.offsetHeight;       // force reflow
+        recBox.style.animation = "";
+        recBox.style.display   = "block";
         }
 
         // Adding Expandable Info Tabs on Subj-Pathway Table Headers to Provide Descriptions for Pathway Categories

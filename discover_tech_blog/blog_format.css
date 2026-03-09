@@ -624,19 +624,87 @@ footer p{
     color:white;
 }
 
-#recommendation-box{
+#recommendation-box {
     display: none;
-    margin: 20px 130px 0px 130px;
-    padding:20px;
-    background-color:rgba(19, 58, 54, 0.5);
-    border:2px solid #6ee7b7;
-    border-radius:10px;
-    color:#fff;
-}
-
-#recommendation-box h3{
-    margin-bottom:10px;
-}
+    margin: 28px auto 0;
+    max-width: 1000px;
+    padding: 2px;
+    border-radius: 18px;
+    background: var(--rec-glow, linear-gradient(135deg, #f7a842, #865DE7));
+    box-shadow: 0 0 40px var(--rec-shadow, rgba(247,168,66,0.25));
+    animation: recFadeIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  
+  @keyframes recFadeIn {
+    from { opacity: 0; transform: translateY(16px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0)   scale(1); }
+  }
+  
+  #rec-content {
+    background: #0d1528;
+    border-radius: 16px;
+    padding: 32px 36px 28px;
+    text-align: left;
+  }
+  
+  #rec-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 10px;
+  }
+  
+  #rec-top {
+    margin-bottom: 6px;
+  }
+  
+  #rec-top-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  
+  #rec-runner-up {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+  }
+  
+  #rec-runner-label {
+    color: rgba(255,255,255,0.35);
+  }
+  
+  #rec-runner-name {
+    font-weight: 600;
+  }
+  
+  #rec-desc {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin: 0 0 22px 0;
+    max-width: 900px;
+  }
+  
+  #rec-scroll-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  #rec-scroll-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--rec-shadow, rgba(247,168,66,0.3));
+  }
 
 table {
     width: 100%;
@@ -790,6 +858,7 @@ tbody tr:hover{
     color: white;
     line-height: 1.7;
     position: relative;
+    box-shadow: 0 0 60px rgba(245, 151, 27, 0.6);
 }
 
 #ai-pathway-cat{
@@ -838,6 +907,7 @@ tbody tr:hover{
     color: white;
     line-height: 1.7;
     position: relative;
+    box-shadow: 0 0 60px rgba(134, 93, 231, 0.6);
 }
 
 #infra-pathway-cat{
@@ -886,6 +956,7 @@ tbody tr:hover{
     color: white;
     line-height: 1.7;
     position: relative;
+    box-shadow: 0 0 60px rgba(102, 142, 59, 0.6);
 }
 
 #ux-pathway-cat{
@@ -934,6 +1005,7 @@ tbody tr:hover{
     color: white;
     line-height: 1.7;
     position: relative;
+    box-shadow: 0 0 60px rgba(223, 79, 151, 0.6);
 }
 
 #em-pathway-cat{
@@ -982,6 +1054,7 @@ tbody tr:hover{
     color: white;
     line-height: 1.7;
     position: relative;
+    box-shadow: 0 0 60px rgba(79, 124, 172, 0.6);
 }
 
 .close {
