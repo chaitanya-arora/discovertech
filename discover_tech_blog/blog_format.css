@@ -393,7 +393,7 @@ footer p{
 /* ==== ABOUT PAGE: Heading Section ==== */
 #about-header{
     font-size: 70px;
-    margin: 0px;
+    margin-top: 60px;
 }
 
 #about-exp{
@@ -409,7 +409,7 @@ footer p{
     text-align: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 0px auto;
+    margin: 80px auto;
 }
 
 .container2{
@@ -506,7 +506,7 @@ footer p{
 
 /* ==== ABOUT PAGE: Our Story ==== */
 #our-story{
-    margin: 20px;
+    margin: 60px;
 }
 
 #story-header{
