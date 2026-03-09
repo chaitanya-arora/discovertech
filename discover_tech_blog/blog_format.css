@@ -336,7 +336,7 @@ footer p{
 
 .path-exp {
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
     opacity: 0.85;
     line-height: 2;
 }
@@ -398,6 +398,7 @@ footer p{
 
 #about-exp{
     text-align: center;
+    font-size: 24px;
     margin: 10px 200px;
 }
 
@@ -543,11 +544,11 @@ footer p{
 #path-header{
     font-size: 70px;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .path-header-exp{
-    font-size: 18px;
+    font-size: 22px;
     color: #ffffffcc;
     max-width: 1150px;
     margin: auto;
@@ -556,9 +557,9 @@ footer p{
 }
 
 #list-of-path-cats{
-    font-size: 18px;
+    font-size: 20px;
     color: #ffffffcc;
-    margin: 40px 400px;
+    margin: 40px 350px;
     max-width: 900px;
     line-height: 1.7;
 }
@@ -608,7 +609,7 @@ footer p{
     color:#cbd5f5;
     padding:10px 16px;
     border-radius:25px;
-    font-size:14px;
+    font-size:18px;
     cursor:pointer;
     transition:all 0.2s ease;
 }
@@ -682,7 +683,7 @@ footer p{
   }
   
   #rec-desc {
-    font-size: 14px;
+    font-size: 18px;
     color: rgba(255,255,255,0.65);
     line-height: 1.7;
     margin: 0 0 22px 0;
@@ -721,7 +722,7 @@ table {
 
 thead th {
     padding: 16px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff;
     border-bottom: 1px solid #1f2a44;
@@ -787,7 +788,7 @@ tbody tr:hover{
 }
 
 .path-cat-exp{
-    font-size: 16px;
+    font-size: 20px;
     margin: 0px 90px 30px 90px;
     color: rgba(255,255,255,0.7);
 }
