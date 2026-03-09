@@ -135,6 +135,7 @@ footer p{
     padding: 10px 18px;
     font-size: 14px;
     font-weight: normal;
+    margin-top: 60px;
 }
 
 #heading1{
@@ -170,6 +171,8 @@ footer p{
     border-color: none;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 #community_button{
@@ -179,10 +182,12 @@ footer p{
     border-color: none;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 /* ==== HOME PAGE: Statistics ==== */
-#statistics{
+#home-statistics{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -230,6 +235,9 @@ footer p{
 }
 
 /* ==== HOME PAGE: Pathways ==== */
+#home-pathways{
+    margin: 80px 0px 80px 0;
+}
 #sect2-heading{
     font-size: 42px;
     text-align: center;
@@ -242,6 +250,7 @@ footer p{
     font-size: 18px;
     font-weight: normal;
     color: #ffffffcc;
+    margin-bottom: 40px;
 }
 
 #path-containers{
@@ -341,7 +350,7 @@ footer p{
 }
 
 /* ==== HOME PAGE: Others ==== */
-#others{
+#home-others{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -350,6 +359,7 @@ footer p{
     gap: 40px;
     padding: 40px 20px;
     background-color: #131c31;
+    margin: 50px 0px;
 }
 
 #resources {
