@@ -766,12 +766,12 @@ tbody tr:hover{
 }
 
 .tag{
-    background:#1e293b;
+    background:#283345;
     padding:3px 8px;
     border-radius:10px;
     font-size:12px;
     margin-left:5px;
-    color:#f7a842;
+    color:#f6ebdc;
 }
 
 /* ==== PATHWAYS PAGE: Path Cards ==== */
@@ -1055,14 +1055,6 @@ tbody tr:hover{
     line-height: 1.7;
     position: relative;
     box-shadow: 0 0 60px rgba(79, 124, 172, 0.6);
-}
-
-.close {
-    font-size: 32px;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 20px;
 }
 
 
