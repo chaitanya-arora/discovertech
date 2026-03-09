@@ -57,66 +57,92 @@
 
      <!-- Table of Main Tech Areas and Subject Preferences -->
      <section id="subj-path-table">
-        <p class="path-header-exp">But because tech careers are so diverse, it can be hard to know where to start. To make this easier, we've created a table that helps you discover which of the five main areas might interest you based on your subject preferences.</p>
+
+        <br>
+        <button class="match-btn"><i class="fa-solid fa-book"></i> Find Your Match</button>
+
+        <h2 class="subjects-title">What Subjects Do You Love?</h2>
+
+        <br>
+
+        <p class="path-header-exp">Tech careers are incredibly diverse, so it can sometimes be difficult to know where to start. One easy way to narrow it down is to think the things you enjoyed most at school as they often hint at the types of tech work you might enjoy too!</p><br>
+        <p class="path-header-exp">Select the school subjects you enjoy most and we'll highlight which tech pathways align best with your strengths.</p><br>
+
+        <div class="subject-buttons">
+            <button class="subj" data-subject="alg">📐 Algebra & Calculus</button>
+            <button class="subj" data-subject="stats">📊 Statistics & Probability</button>
+            <button class="subj" data-subject="physics">⚡ Physics</button>
+            <button class="subj" data-subject="coding">💻 Coding & Programming</button>
+            <button class="subj" data-subject="art">🎨 Visual Art & Design</button>
+            <button class="subj" data-subject="psych">🧠 Psychology</button>
+            <button class="subj" data-subject="econ">📈 Business & Economics</button>
+            <button class="subj" data-subject="eng">🔧 Electronics & Engineering</button>
+        </div>
+
+        <div id="recommendation-box">
+            <h3>Recommended Pathway</h3>
+            <p id="result">Select subjects to see your best tech pathway.</p>
+        </div>
+
         <br><br>
         <table border="1" align="center">
             <thead align="center">
                 <tr>
                     <th width="200">Subject</th>
-                    <th width="220" style="background-color: rgba(247, 168, 66, 0.4);">Software Engineering</th>
-                    <th width="220" style="background-color: rgba(152, 116, 237, 0.4);">AI & Data</th>
-                    <th width="220" style="background-color: rgba(145, 188, 98, 0.4);">Infrastructure & Systems</th>
-                    <th width="220" style="background-color:rgba(231, 111, 171, 0.4);">Design & Product</th>
-                    <th width="220" style="background-color: rgba(79, 124, 172, 0.4)">Emerging Technology</th>
+                    <th width="220" style="background-color: rgba(247, 168, 66, 0.4);">Software Eng <i class="fa-solid fa-circle-info info-icon" data-info="Careers focused on designing, building, and maintaining software systems for web, mobile, and games."></i></th>
+                    <th width="220" style="background-color: rgba(152, 116, 237, 0.4);">AI & Data <i class="fa-solid fa-circle-info info-icon" data-info="Careers focused on building intelligent systems, analyzing data, and designing pipelines for insights."></i></th>
+                    <th width="220" style="background-color: rgba(145, 188, 98, 0.4);">Infrastructure & Systems <i class="fa-solid fa-circle-info info-icon" data-info="Careers that keep systems running reliably, manage cloud platforms, and secure data and applications."></i></th>
+                    <th width="220" style="background-color:rgba(231, 111, 171, 0.4);">Design & Product <i class="fa-solid fa-circle-info info-icon" data-info="Careers combining creativity, design, and product strategy."></i></th>
+                    <th width="220" style="background-color: rgba(79, 124, 172, 0.4)">Emerging Tech <i class="fa-solid fa-circle-info info-icon" data-info="New and future-focused tech fields shaping the digital world."></i></th>
                 </tr>
             </thead>
             <tbody align="center">
                 <tr>
-                    <td>📐  Maths (algebra/calculus)</td>
-                    <td>✅</td>
-                    <td>✅</td>
+                    <td>📐  Algebra & Calculus</td>
+                    <td><span class="check-swe-alg">✅</span></td>
+                    <td><span class="check-ai-alg">✅</span></td>
                     <td>❌</td>
                     <td>❌</td>
-                    <td>✅</td>
+                    <td><span class="check-emg-alg">✅</span></td>
                 </tr>
                 <tr>
-                    <td>📊  Maths (statistics/probability)</td>
+                    <td>📊  Statistics & Probability</td>
                     <td>❌</td>
-                    <td>✅</td>
+                    <td><span class="check-ai-stats">✅</span></td>
                     <td>❌</td>
                     <td>❌</td>
-                    <td>✅</td>
+                    <td><span class="check-emg-stats">✅</span></td>
                 </tr>
                 <tr>
-                    <td>⚡  Physics</td>
+                    <td>⚡ Physics</td>
                     <td>❌</td>
                     <td>❌</td>
-                    <td>✅</td>
+                    <td><span class="check-infra-physics">✅</span></td>
                     <td>❌</td>
-                    <td>✅</td>
+                    <td><span class="check-emg-physics">✅</span></td>
                 </tr>
                 <tr>
                     <td>💻  Coding & Programming</td>
-                    <td>✅</td>
-                    <td>✅</td>
+                    <td><span class="check-swe-coding">✅</span></td>
+                    <td><span class="check-ai-coding">✅</span></td>
                     <td>❌</td>
                     <td>❌</td>
                     <td>❌</td>
                 </tr>
                 <tr>
-                    <td>🎨  Visual Arts & Design</td>
-                    <td>✅ - frontend</td>
+                    <td>🎨  Visual Art & Design</td>
+                    <td><span class="check-swe-art">✅</span> <br><br> <span class="tag">frontend</span></td>
                     <td>❌</td>
                     <td>❌</td>
-                    <td>✅</td>
-                    <td>✅</td>
+                    <td><span class="check-ux-art">✅</span></td>
+                    <td><span class="check-emg-art">✅</span></td>
                 </tr>
                 <tr>
                     <td>🧠  Psychology</td>
+                    <td><span class="check">✅</span> <br><br> <span class="tag">frontend</span></td>
                     <td>❌</td>
                     <td>❌</td>
-                    <td>❌</td>
-                    <td>✅</td>
+                    <td><span class="check-ux-psych">✅</span></td>
                     <td>❌</td>
                 </tr>
                 <tr>
@@ -124,30 +150,38 @@
                     <td>❌</td>
                     <td>❌</td>
                     <td>❌</td>
-                    <td>✅</td>
-                    <td>✅ - blockchain</td> 
+                    <td><span class="check-ux-econ">✅</span></td>
+                    <td><span class="check-emg-econ">✅</span> <br><br> <span class="tag">blockchain</span></td> 
                 </tr>
                 <tr>
-                    <td>Practical Projects</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
+                    <td>🔧 Electronics & Engineering</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td><span class="check-infra-eng">✅</span></td>
+                    <td>❌</td>
+                    <td><span class="check-emg-eng">✅</span></td>
                 </tr>
                 <tr>
-                    <td>Theoretical Work</td>
+                    <td>✍️  Practical Projects</td>
+                    <td><span class="check">✅</span></td>
+                    <td><span class="check">✅</span></td>
+                    <td><span class="check">✅</span></td>
+                    <td><span class="check">✅</span></td>
+                    <td><span class="check">✅</span></td>
+                </tr>
+                <tr>
+                    <td>💭  Theoretical Work</td>
                     <td>❌</td>
-                    <td>✅</td>
+                    <td><span class="check">✅</span></td>
                     <td>❌</td>
                     <td>❌</td>
-                    <td>✅</td>
+                    <td><span class="check">✅</span></td>
                 </tr>
             </tbody>
         </table>
-        <br><br>
+        <br><br><br><br>
         <p class="path-header-exp">Once you’ve identified the areas that excite you, you can explore each specific pathway by clicking on any of the boxes below!</p>
-        <br><br><br>
+        <br><br>
     </section>
     
      <!-- Pathway Cards -->
@@ -624,8 +658,8 @@
         <section id="em">
             <hr>
             <br><br>
-            <h2 class="path-cat-header" style="color: #4F7CAC;">Emerging Technology</h2>
-            <p class="path-cat-exp" style="color: rgba(79, 124, 172, 0.7);">New and future-focused tech fields shaping the digital world.</p>
+            <h2 class="path-cat-header" style="color: #8bb2db;">Emerging Technology</h2>
+            <p class="path-cat-exp" style="color: rgba(139, 178, 219,0.7);">New and future-focused tech fields shaping the digital world.</p>
 
             <div class="path-cat">
 
@@ -779,8 +813,108 @@
         <br><br>
      </footer>
 
-     <!-- JavaScript - Open and Close Explanation Box for Each Pathway Container-->
+     <div id="tooltip" class="tooltip"></div>
+
+     <!-- JavaScript --> 
      <script>
+        
+        // Making Subject Buttons Clickable and Giving Pathway Recommendations Based on Subject Preferences 
+        const buttons = document.querySelectorAll(".subj");
+        const result = document.getElementById("result");
+
+        let selectedSubjects = [];
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                const subject = btn.dataset.subject;
+
+                btn.classList.toggle("active");
+
+                if(selectedSubjects.includes(subject)){
+                    selectedSubjects = selectedSubjects.filter(s => s !== subject);
+                } else {
+                    selectedSubjects.push(subject);
+                }
+
+                calculatePathway();
+            });
+        });
+
+        function calculatePathway(){
+
+            const scores = {
+                software:0,
+                ai:0,
+                infra:0,
+                design:0,
+                emerging:0
+            };
+
+            selectedSubjects.forEach(subject => {
+
+                scores.software += document.querySelectorAll(".check-swe-" + subject).length;
+                scores.ai += document.querySelectorAll(".check-ai-" + subject).length;
+                scores.infra += document.querySelectorAll(".check-infra-" + subject).length;
+                scores.design += document.querySelectorAll(".check-ux-" + subject).length;
+                scores.emerging += document.querySelectorAll(".check-emg-" + subject).length;
+
+            });
+
+            const recBox = document.getElementById("recommendation-box");
+            if(selectedSubjects.length === 0){
+                recBox.style.display = "none"; // hide when nothing selected
+                return;
+            } else {
+                recBox.style.display = "block"; // show when at least one selected
+            }
+
+            const best = Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+
+            if(best[0][1] === 0){
+                result.innerText = "Select subjects to see your best tech pathway.";
+                return;
+            }
+
+            const pathwayNames = {
+                software:"Software Engineering",
+                ai:"AI & Data",
+                infra:"Infrastructure & Systems",
+                design:"Design & Product",
+                emerging:"Emerging Technology"
+            };
+
+            result.innerText =
+            "Best Match(es): " + pathwayNames[best[0][0]] + 
+            " | Second Match: " + pathwayNames[best[1][0]];
+        }
+
+        // Adding Expandable Info Tabs on Subj-Pathway Table Headers to Provide Descriptions for Pathway Categories
+        const tooltip = document.getElementById("tooltip");
+        const infoIcons = document.querySelectorAll(".info-icon");
+
+        infoIcons.forEach(icon => {
+        icon.addEventListener("click", (e) => {
+            const infoText = icon.dataset.info;
+            tooltip.innerText = infoText;
+
+            // Position tooltip above the icon
+            const rect = icon.getBoundingClientRect();
+            tooltip.style.left = rect.left + window.scrollX + "px";
+            tooltip.style.top = rect.bottom + window.scrollY + 8 + "px";
+
+            tooltip.style.display = "block";
+        });
+        });
+
+        // Hide tooltip when clicking anywhere else
+        document.addEventListener("click", (e) => {
+        if (!e.target.classList.contains("info-icon")) {
+            tooltip.style.display = "none";
+        }
+        });
+
+        // Open and Close Explanation Box for Each Pathway Container
         function openModal(id) {
             document.getElementById(id).style.display = "flex";
         }
@@ -789,6 +923,8 @@
             document.getElementById(id).style.display = "none";
         }
     </script>
+
+    
 
 </body>
 </html>
