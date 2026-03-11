@@ -43,8 +43,17 @@
             <h3 id="resources-container"><i class="fa-solid fa-graduation-cap"></i>  Curated for Students!</h3>
          </div>
         <h1 class="grad-text-og" id="resources-header">Resources & Opportunities</h1>
-        <p class="path-header-exp">Everything you need to learn, build experience, and break into tech, all in one place!</p><br>
+        <p class="path-header-exp">Everything you need to learn, build experience, and break into tech, all in one place! Link on any resource to get started.</p><br>
      </header>
+
+     <!-- Personal Favourite Resources -->
+      <section class="resource-section" id="personal-favs">
+          <h2 class="resource-exp" style="color: #eab328;"><i class="fa-solid fa-star"></i>   Favourite Resources</h2>
+          <p class="resource-exp">Our hand-picked favourite resources for learning programming, preparing for interviews, and exploring the tech world.</p>
+
+          <div class="fav-grid" id="fav-resources-container"></div>
+
+    </section>
 
      <!-- Dropdown Resources Section -->
      <section id="resources-list">
@@ -70,7 +79,7 @@
                     <div class="resource">
                         <h3 class="resource-name">Codédex</h3>
                         <p class="resource-exp">Gamified coding learning platform that turns programming into an adventure-style experience. Users earn XP, unlock regions, and learn languages like Python, HTML, CSS, and JavaScript through interactive lessons and challenges.</p>
-                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Gamified</span> <span class="tag">Beginner Friendly</span> <span class="tag">Interactive Lessons</span> <span class="tag">Projects</span>
+                        <span class="tag">Gamified</span> <span class="tag">Beginner Friendly</span> <span class="tag">Interactive Lessons</span> <span class="tag">Projects</span>
                     </div>
                 </a>
 
@@ -196,7 +205,7 @@
                     <div class="resource">
                         <h3 class="resource-name">Coder Coder</h3>
                         <p class="resource-exp">Frontend development tutorials focusing on HTML, CSS, JavaScript, and responsive web design with beginner-friendly explanations and practical projects.</p>
-                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Web Dev</span> <span class="tag">Frontend</span> <span class="tag">Projects</span> <span class="tag">Beginner Friendly</span>
+                        <span class="tag">Web Dev</span> <span class="tag">Frontend</span> <span class="tag">Projects</span> <span class="tag">Beginner Friendly</span>
                     </div>
                 </a>
 
@@ -251,7 +260,7 @@
                     <div class="resource">
                         <h3 class="resource-name">NeetCode</h3>
                         <p class="resource-exp">Popular interview preparation platform that organizes LeetCode problems into structured roadmaps like the famous NeetCode 150, with explanations and video solutions.</p>
-                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Interview Prep</span> <span class="tag">DSA</span> <span class="tag">Structured Roadmap</span>
+                        <span class="tag">Interview Prep</span> <span class="tag">DSA</span> <span class="tag">Structured Roadmap</span>
                     </div>
                 </a>
 
@@ -375,6 +384,35 @@
             }
 
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const favContainer = document.getElementById("fav-resources-container");
+
+            const allResources = document.querySelectorAll(".resource");
+
+            allResources.forEach(resource => {
+
+                if (resource.querySelector(".fav_tag")) {
+
+                    const clone = resource.cloneNode(true);
+
+                    // Remove all tags
+                    clone.querySelectorAll(".tag, .fav_tag").forEach(tag => tag.remove());
+
+                    // Add star icon
+                    const star = document.createElement("div");
+                    star.classList.add("fav-star");
+                    star.innerHTML = '<i class="fa-solid fa-star"></i>';
+
+                    clone.prepend(star);
+
+                    favContainer.appendChild(clone);
+                }
+
+            });
+
+        });
      </script>
 </body>
 </html>
