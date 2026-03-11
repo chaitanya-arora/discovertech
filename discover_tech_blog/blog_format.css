@@ -1087,8 +1087,15 @@ tbody tr:hover{
 .fav-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 10px;
     margin-top: 10px;
+}
+
+.fav-grid a {
+    text-decoration: none; 
+    color: inherit;      
+    display: block; 
 }
 
 .fav-grid .resource{
@@ -1116,8 +1123,6 @@ tbody tr:hover{
 
 .fav-grid .resource-exp{
     font-size: 14px;
-    align-items: center;
-    justify-content: center;
 }
 
 .resource-section{

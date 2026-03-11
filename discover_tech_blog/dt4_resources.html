@@ -395,19 +395,25 @@
 
                 if (resource.querySelector(".fav_tag")) {
 
-                    const clone = resource.cloneNode(true);
+                    // Find the parent <a> of this resource
+                    const link = resource.closest("a");
+                    if (!link) return;
 
-                    // Remove all tags
-                    clone.querySelectorAll(".tag, .fav_tag").forEach(tag => tag.remove());
+                    // Clone the entire <a> (so the link works)
+                    const cloneLink = link.cloneNode(true);
 
-                    // Add star icon
+                    // Remove tags inside the cloned resource
+                    const cloneResource = cloneLink.querySelector(".resource");
+                    cloneResource.querySelectorAll(".tag, .fav_tag").forEach(tag => tag.remove());
+
+                    // Add a star to the top-right
                     const star = document.createElement("div");
                     star.classList.add("fav-star");
                     star.innerHTML = '<i class="fa-solid fa-star"></i>';
+                    cloneResource.prepend(star);
 
-                    clone.prepend(star);
-
-                    favContainer.appendChild(clone);
+                    // Append the cloned <a> (with clickable link) to fav container
+                    favContainer.appendChild(cloneLink);
                 }
 
             });
