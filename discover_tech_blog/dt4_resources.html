@@ -46,218 +46,278 @@
         <p class="path-header-exp">Everything you need to learn, build experience, and break into tech, all in one place!</p><br>
      </header>
 
+     <!-- Dropdown Resources Section -->
      <section id="resources-list">
+
+        <!-- Learning Platforms -->
         <section class="resource-section" id="learning-platforms">
             <h2 class="resource-type"><i class="fa-solid fa-book"></i>  Learning Platforms</h2>
+            <p class="resource-exp"> Platforms that provide structured courses, tutorials, and guided learning paths to help beginners start programming and build real-world projects.</p>
 
-            <a href="https://www.theodinproject.com/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">The Odin Project</h3>
-                    <p class="resource-exp">Free, open-source full-stack web development curriculum focusing on building real projects using HTML, CSS, JavaScript, Git, and Node.js.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Free</span> <span class="tag">Project-based</span> <span class="tag">Web Dev</span> <span class="tag">Community</span>
-                </div>
-            </a>
+            <button class="dropdown-btn" onclick="toggleResources('learning-platforms-resources', this)">View Resources <i class="fa-solid fa-chevron-down"></i></button>
 
-            <a href="https://www.codedex.io/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Codédex</h3>
-                    <p class="resource-exp">Gamified coding learning platform that turns programming into an adventure-style experience. Users earn XP, unlock regions, and learn languages like Python, HTML, CSS, and JavaScript through interactive lessons and challenges.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Gamified</span> <span class="tag">Beginner Friendly</span> <span class="tag">Interactive Lessons</span> <span class="tag">Projects</span>
-                </div>
-            </a>
+            <div class="resources-drop-down" id="learning-platforms-resources">
 
-            <a href="https://www.freecodecamp.org/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">freeCodeCamp</h3>
-                    <p class="resource-exp">One of the largest free coding platforms with thousands of lessons, coding challenges, and certifications. Covers web development, data science, Python, machine learning, and more with project-based learning.</p>
-                    <span class="tag">Free</span> <span class="tag">Beginner Friendly</span> <span class="tag">Project-based</span> <span class="tag">Certifications</span>
-                </div>
-            </a>
+                <br>
+                
+                <a href="https://www.theodinproject.com/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">The Odin Project</h3>
+                        <p class="resource-exp">Free, open-source full-stack web development curriculum focusing on building real projects using HTML, CSS, JavaScript, Git, and Node.js.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Free</span> <span class="tag">Project-based</span> <span class="tag">Web Dev</span> <span class="tag">Community</span>
+                    </div>
+                </a>
 
-            <a href="https://www.codecademy.com/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Codecademy</h3>
-                    <p class="resource-exp">Interactive coding platform offering courses in Python, JavaScript, C++, SQL, and more. Includes exercises and guided projects with a freemium model.</p>
-                    <span class="tag">Interactive</span> <span class="tag">Beginner Friendly</span> <span class="tag">Freemium</span> <span class="tag">Multiple Languages</span>
-                </div>
-            </a>
+                <a href="https://www.codedex.io/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Codédex</h3>
+                        <p class="resource-exp">Gamified coding learning platform that turns programming into an adventure-style experience. Users earn XP, unlock regions, and learn languages like Python, HTML, CSS, and JavaScript through interactive lessons and challenges.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Gamified</span> <span class="tag">Beginner Friendly</span> <span class="tag">Interactive Lessons</span> <span class="tag">Projects</span>
+                    </div>
+                </a>
 
-            <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">CS50 (Harvard)</h3>
-                    <p class="resource-exp">One of the most popular introductory computer science courses online, teaching programming fundamentals, algorithms, and problem solving through real projects.</p>
-                    <span class="tag">Free</span> <span class="tag">University Course</span> <span class="tag">Computer Science</span> <span class="tag">Beginner</span>
-                </div>
-            </a>
+                <a href="https://www.freecodecamp.org/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">freeCodeCamp</h3>
+                        <p class="resource-exp">One of the largest free coding platforms with thousands of lessons, coding challenges, and certifications. Covers web development, data science, Python, machine learning, and more with project-based learning.</p>
+                        <span class="tag">Free</span> <span class="tag">Beginner Friendly</span> <span class="tag">Project-based</span> <span class="tag">Certifications</span>
+                    </div>
+                </a>
 
-            <a href="https://www.coursera.org/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Coursera</h3>
-                    <p class="resource-exp">Online learning platform offering courses, certificates, and full specializations from universities and tech companies such as Google, Meta, and Stanford. Covers programming, computer science, AI, and data science.</p>
-                    <span class="tag">University Courses</span> <span class="tag">Certificates</span> <span class="tag">Career Paths</span> <span class="tag">Freemium</span>
-                </div>
-            </a>
+                <a href="https://www.codecademy.com/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Codecademy</h3>
+                        <p class="resource-exp">Interactive coding platform offering courses in Python, JavaScript, C++, SQL, and more. Includes exercises and guided projects with a freemium model.</p>
+                        <span class="tag">Interactive</span> <span class="tag">Beginner Friendly</span> <span class="tag">Freemium</span> <span class="tag">Multiple Languages</span>
+                    </div>
+                </a>
 
-            <a href="https://www.kaggle.com/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Kaggle</h3>
-                    <p class="resource-exp">Data science and machine learning platform offering datasets, competitions, notebooks, and free micro-courses for learning Python, data analysis, and machine learning.</p>
-                    <span class="tag">AI/ML</span> <span class="tag">Datasets</span> <span class="tag">Competitions</span> <span class="tag">Hands-on Learning</span>
-                </div>
-            </a>
+                <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">CS50 (Harvard)</h3>
+                        <p class="resource-exp">One of the most popular introductory computer science courses online, teaching programming fundamentals, algorithms, and problem solving through real projects.</p>
+                        <span class="tag">Free</span> <span class="tag">University Course</span> <span class="tag">Computer Science</span> <span class="tag">Beginner</span>
+                    </div>
+                </a>
+
+                <a href="https://www.coursera.org/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Coursera</h3>
+                        <p class="resource-exp">Online learning platform offering courses, certificates, and full specializations from universities and tech companies such as Google, Meta, and Stanford. Covers programming, computer science, AI, and data science.</p>
+                        <span class="tag">University Courses</span> <span class="tag">Certificates</span> <span class="tag">Career Paths</span> <span class="tag">Freemium</span>
+                    </div>
+                </a>
+
+                <a href="https://www.kaggle.com/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Kaggle</h3>
+                        <p class="resource-exp">Data science and machine learning platform offering datasets, competitions, notebooks, and free micro-courses for learning Python, data analysis, and machine learning.</p>
+                        <span class="tag">AI/ML</span> <span class="tag">Datasets</span> <span class="tag">Competitions</span> <span class="tag">Hands-on Learning</span>
+                    </div>
+                </a>
+
+            </div>
+
         </section>
 
+        <!-- Documentation and Learning References -->
         <section class="resource-section" id="documentation">
             <h2 class="resource-type"><i class="fa-solid fa-file"></i>  Documentation/Learning References</h2>
-
-            <a href="https://roadmap.sh/dashboard" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">roadmap.sh</h3>
-                    <p class="resource-exp">Visual roadmaps showing the skills needed for roles like frontend developer, backend developer, DevOps engineer, and more.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Career Paths</span> <span class="tag">Visual Roadmaps</span> <span class="tag">Self-guided Learning</span>
-                </div>
-            </a>
-
-            <a href="https://www.w3schools.com/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">W3Schools</h3>
-                    <p class="resource-exp">A popular educational website offering beginner tutorials and references for web development technologies like HTML, CSS, JavaScript, Python, and SQL with an in-browser code editor.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Beginner Friendly</span> <span class="tag">Reference</span> <span class="tag">Web Dev</span> <span class="tag">Interactive Editor</span>
-                </div>
-            </a>
+            <p class="resource-exp">Guides, documentation, and reference sites that explain programming concepts, syntax, and best practices.</p>
             
-            <a href="https://www.geeksforgeeks.org/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">GeeksforGeeks</h3>
-                    <p class="resource-exp">Large programming resource with tutorials, interview prep, data structures explanations, and coding problems widely used by students preparing for technical interviews.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Tutorials</span> <span class="tag">Interview Prep</span> <span class="tag">DSA</span> <span class="tag">Articles</span>
-                </div>
-            </a>
-            
-            <a href="https://developer.mozilla.org/en-US/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">MDN Web Docs</h3>
-                    <p class="resource-exp">Highly trusted documentation for web technologies including HTML, CSS, JavaScript, and browser APIs maintained by Mozilla.</p>
-                    <span class="tag">Documentation</span> <span class="tag">Web Dev</span> <span class="tag">Reference</span>
-                </div>
-            </a>
+            <button class="dropdown-btn" onclick="toggleResources('documentation-resources', this)">View Resources <i class="fa-solid fa-chevron-down"></i></button>
+
+            <div class="resources-drop-down" id="documentation-resources">
+
+                <br>
+
+                <a href="https://roadmap.sh/dashboard" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">roadmap.sh</h3>
+                        <p class="resource-exp">Visual roadmaps showing the skills needed for roles like frontend developer, backend developer, DevOps engineer, and more.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Career Paths</span> <span class="tag">Visual Roadmaps</span> <span class="tag">Self-guided Learning</span>
+                    </div>
+                </a>
+
+                <a href="https://www.w3schools.com/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">W3Schools</h3>
+                        <p class="resource-exp">A popular educational website offering beginner tutorials and references for web development technologies like HTML, CSS, JavaScript, Python, and SQL with an in-browser code editor.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Beginner Friendly</span> <span class="tag">Reference</span> <span class="tag">Web Dev</span> <span class="tag">Interactive Editor</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.geeksforgeeks.org/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">GeeksforGeeks</h3>
+                        <p class="resource-exp">Large programming resource with tutorials, interview prep, data structures explanations, and coding problems widely used by students preparing for technical interviews.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Tutorials</span> <span class="tag">Interview Prep</span> <span class="tag">DSA</span> <span class="tag">Articles</span>
+                    </div>
+                </a>
+                
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">MDN Web Docs</h3>
+                        <p class="resource-exp">Highly trusted documentation for web technologies including HTML, CSS, JavaScript, and browser APIs maintained by Mozilla.</p>
+                        <span class="tag">Documentation</span> <span class="tag">Web Dev</span> <span class="tag">Reference</span>
+                    </div>
+                </a>
+
+            </div>
+
         </section>
 
+        <!-- YouTube Channels -->
         <section class="resource-section" id="youtube">
             <h2 class="resource-type"><i class="fa-brands fa-youtube"></i>  YouTube Channels</h2>
+            <p class="resource-exp">YouTube creators who teach programming through tutorials, project walkthroughs, and full coding courses.</p>
+        
+            <button class="dropdown-btn" onclick="toggleResources('youtube-resources', this)">View Resources <i class="fa-solid fa-chevron-down"></i></button>
 
-            <a href="https://www.youtube.com/@BroCodez" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Bro Code</h3>
-                    <p class="resource-exp">Beginner-friendly programming tutorials covering Python, Java, JavaScript, and game development with step-by-step explanations.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Beginner</span> <span class="tag">Tutorials</span> <span class="tag">Multiple Languages</span>
-                </div>
-            </a>
+            <div class="resources-drop-down" id="youtube-resources">
 
-            <a href="https://www.youtube.com/@programmingwithmosh" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Programming with Mosh</h3>
-                    <p class="resource-exp">Clear and practical tutorials on programming languages like Python, JavaScript, and C#. Known for beginner-friendly explanations and structured lessons.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Beginner Friendly</span> <span class="tag">Structured Lessons</span> <span class="tag">Software Engineering</span>
-                </div>
-            </a>
+                <br>
 
-            <a href="https://www.youtube.com/@TheCoderCoder" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Coder Coder</h3>
-                    <p class="resource-exp">Frontend development tutorials focusing on HTML, CSS, JavaScript, and responsive web design with beginner-friendly explanations and practical projects.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Web Dev</span> <span class="tag">Frontend</span> <span class="tag">Projects</span> <span class="tag">Beginner Friendly</span>
-                </div>
-            </a>
+                <a href="https://www.youtube.com/@BroCodez" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Bro Code</h3>
+                        <p class="resource-exp">Beginner-friendly programming tutorials covering Python, Java, JavaScript, and game development with step-by-step explanations.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Beginner</span> <span class="tag">Tutorials</span> <span class="tag">Multiple Languages</span>
+                    </div>
+                </a>
 
-            <a href="https://www.youtube.com/@freecodecamp" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">freeCodeCamp (YouTube)</h3>
-                    <p class="resource-exp">Massive collection of full-length programming tutorials covering Python, web development, data science, and more. Many videos are complete courses several hours long.</p>
-                    <span class="tag">Free</span> <span class="tag">Full Courses</span> <span class="tag">Beginner Friendly</span>
-                </div>
-            </a>
+                <a href="https://www.youtube.com/@programmingwithmosh" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Programming with Mosh</h3>
+                        <p class="resource-exp">Clear and practical tutorials on programming languages like Python, JavaScript, and C#. Known for beginner-friendly explanations and structured lessons.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Beginner Friendly</span> <span class="tag">Structured Lessons</span> <span class="tag">Software Engineering</span>
+                    </div>
+                </a>
 
-            <a href="https://www.youtube.com/@TraversyMedia" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Traversy Media</h3>
-                    <p class="resource-exp">Highly respected web development channel offering crash courses and full projects on modern technologies like React, Node.js, and MongoDB. :contentReference[oaicite:4]{index=4}</p>
-                    <span class="tag">Web Dev</span> <span class="tag">Projects</span> <span class="tag">Crash Courses</span>
-                </div>
-            </a>
+                <a href="https://www.youtube.com/@TheCoderCoder" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Coder Coder</h3>
+                        <p class="resource-exp">Frontend development tutorials focusing on HTML, CSS, JavaScript, and responsive web design with beginner-friendly explanations and practical projects.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Web Dev</span> <span class="tag">Frontend</span> <span class="tag">Projects</span> <span class="tag">Beginner Friendly</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@freecodecamp" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">freeCodeCamp (YouTube)</h3>
+                        <p class="resource-exp">Massive collection of full-length programming tutorials covering Python, web development, data science, and more. Many videos are complete courses several hours long.</p>
+                        <span class="tag">Free</span> <span class="tag">Full Courses</span> <span class="tag">Beginner Friendly</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@TraversyMedia" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Traversy Media</h3>
+                        <p class="resource-exp">Highly respected web development channel offering crash courses and full projects on modern technologies like React, Node.js, and MongoDB.</p>
+                        <span class="tag">Web Dev</span> <span class="tag">Projects</span> <span class="tag">Crash Courses</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.youtube.com/@NetNinja" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Net Ninja</h3>
+                        <p class="resource-exp">Structured playlists covering topics like JavaScript, React, Firebase, and Node.js with clear step-by-step tutorials.</p>
+                        <span class="tag">Structured Playlists</span> <span class="tag">Web Dev</span> <span class="tag">Beginner Friendly</span>
+                    </div>
+                </a>
             
-            <a href="https://www.youtube.com/@NetNinja" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Net Ninja</h3>
-                    <p class="resource-exp">Structured playlists covering topics like JavaScript, React, Firebase, and Node.js with clear step-by-step tutorials. :contentReference[oaicite:5]{index=5}</p>
-                    <span class="tag">Structured Playlists</span> <span class="tag">Web Dev</span> <span class="tag">Beginner Friendly</span>
-                </div>
-            </a>
+            </div>
+
         </section>
 
+        <!-- Interview Prep -->
         <section class="resource-section" id="interview-prep">
             <h2 class="resource-type"><i class="fa-solid fa-code"></i>  Coding Practice & Interview Prep</h2>
+            <p class="resource-exp"> Platforms for practicing algorithms, solving coding challenges, and preparing for technical interviews.</p>
+        
+            <button class="dropdown-btn" onclick="toggleResources('interview-resources', this)">View Resources <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="resources-drop-down" id="interview-resources">
 
-            <a href="https://leetcode.com/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">LeetCode</h3>
-                    <p class="resource-exp">Popular coding practice platform with algorithm problems used in technical interviews at companies like Google, Amazon, and Meta.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span> <span class="tag">DSA Practice</span> <span class="tag">Interview Prep</span> <span class="tag">Competitive Coding</span>
-                </div>
-            </a>
+                <br>
 
-            <a href="https://neetcode.io/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">NeetCode</h3>
-                    <p class="resource-exp">Popular interview preparation platform that organizes LeetCode problems into structured roadmaps like the famous NeetCode 150, with explanations and video solutions.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Interview Prep</span> <span class="tag">DSA</span> <span class="tag">Structured Roadmap</span>
-                </div>
-            </a>
+                <a href="https://leetcode.com/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">LeetCode</h3>
+                        <p class="resource-exp">Popular coding practice platform with algorithm problems used in technical interviews at companies like Google, Amazon, and Meta.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span> <span class="tag">DSA Practice</span> <span class="tag">Interview Prep</span> <span class="tag">Competitive Coding</span>
+                    </div>
+                </a>
 
-            <a href="https://www.hackerrank.com/interview/interview-preparation-kit" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">HackerRank</h3>
-                    <p class="resource-exp">Coding challenge platform with practice problems in algorithms, databases, AI, and cybersecurity plus company-sponsored coding challenges.</p>
-                    <span class="tag">Practice Problems</span> <span class="tag">Competitions</span> <span class="tag">Skill Certification</span>
-                </div>
-            </a>
+                <a href="https://neetcode.io/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">NeetCode</h3>
+                        <p class="resource-exp">Popular interview preparation platform that organizes LeetCode problems into structured roadmaps like the famous NeetCode 150, with explanations and video solutions.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Interview Prep</span> <span class="tag">DSA</span> <span class="tag">Structured Roadmap</span>
+                    </div>
+                </a>
+
+                <a href="https://www.hackerrank.com/interview/interview-preparation-kit" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">HackerRank</h3>
+                        <p class="resource-exp">Coding challenge platform with practice problems in algorithms, databases, AI, and cybersecurity plus company-sponsored coding challenges.</p>
+                        <span class="tag">Practice Problems</span> <span class="tag">Competitions</span> <span class="tag">Skill Certification</span>
+                    </div>
+                </a>
+
+            </div>
+
         </section>
 
+        <!-- Community Forums -->
         <section class="resource-section" id="forums">
             <h2 class="resource-type"><i class="fa-solid fa-comments"></i> Community Forums</h2>
-
-            <a href="https://stackoverflow.com/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Stack Overflow</h3>
-                    <p class="resource-exp">The largest programming Q&A platform where developers ask and answer coding questions across thousands of technologies.</p>
-                    <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Community</span> <span class="tag">Q&A</span> <span class="tag">Problem Solving</span>
-                </div>
-            </a>
+            <p class="resource-exp">Online communities where programmers ask questions, share knowledge, collaborate on projects, and help each other learn.</p>
+        
+            <button class="dropdown-btn" onclick="toggleResources('forum-resources', this)">View Resources <i class="fa-solid fa-chevron-down"></i></button>
             
-            <a href="https://www.reddit.com/r/learnprogramming/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">r/learnprogramming</h3>
-                    <p class="resource-exp">Reddit community focused on helping beginners learn programming with advice, resources, and discussion.</p>
-                    <span class="tag">Community</span> <span class="tag">Beginner Friendly</span> <span class="tag">Discussion</span>
-                </div>
-            </a>
-            
-            <a href="https://dev.to/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Dev.to</h3>
-                    <p class="resource-exp">Developer community where programmers share tutorials, career advice, projects, and programming articles.</p>
-                    <span class="tag">Community</span> <span class="tag">Blogs</span> <span class="tag">Learning</span>
-                </div>
-            </a>
+            <div class="resources-drop-down" id="forum-resources">
 
-            <a href="https://discord.com/" target="_blank">
-                <div class="resource">
-                    <h3 class="resource-name">Discord</h3>
-                    <p class="resource-exp">Popular communication platform with thousands of developer communities where programmers collaborate, ask questions, join study groups, and participate in coding events.</p>
-                    <span class="tag">Community</span> <span class="tag">Discussion</span> <span class="tag">Study Groups</span> <span class="tag">Networking</span>
-                </div>
-            </a>
+                <br>
+
+                <a href="https://stackoverflow.com/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Stack Overflow</h3>
+                        <p class="resource-exp">The largest programming Q&A platform where developers ask and answer coding questions across thousands of technologies.</p>
+                        <span class="fav_tag"><i class="fa-solid fa-star"></i>  Personal Favourite</span>  <span class="tag">Community</span> <span class="tag">Q&A</span> <span class="tag">Problem Solving</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.reddit.com/r/learnprogramming/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">r/learnprogramming</h3>
+                        <p class="resource-exp">Reddit community focused on helping beginners learn programming with advice, resources, and discussion.</p>
+                        <span class="tag">Community</span> <span class="tag">Beginner Friendly</span> <span class="tag">Discussion</span>
+                    </div>
+                </a>
+                
+                <a href="https://dev.to/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Dev.to</h3>
+                        <p class="resource-exp">Developer community where programmers share tutorials, career advice, projects, and programming articles.</p>
+                        <span class="tag">Community</span> <span class="tag">Blogs</span> <span class="tag">Learning</span>
+                    </div>
+                </a>
+
+                <a href="https://discord.com/" target="_blank">
+                    <div class="resource">
+                        <h3 class="resource-name">Discord</h3>
+                        <p class="resource-exp">Popular communication platform with thousands of developer communities where programmers collaborate, ask questions, join study groups, and participate in coding events.</p>
+                        <span class="tag">Community</span> <span class="tag">Discussion</span> <span class="tag">Study Groups</span> <span class="tag">Networking</span>
+                    </div>
+                </a>
+
+            </div>
+
         </section>
+
+        <br>
+
      </section>
  
      <!-- Footer -->
@@ -297,5 +357,26 @@
         <p id="copyright"><i class="fa-regular fa-copyright"></i>2026 DiscoverTech. Built for students, by students who love tech.</p>
         <br><br>
      </footer>
+
+     <script>
+
+        // open dropdown resources 
+        function toggleResources(id, button) {
+
+            const resources = document.getElementById(id);
+            const icon = button.querySelector("i");
+
+            if (resources.style.display === "block") {
+                resources.style.display = "none";
+                icon.classList.remove("fa-chevron-up");
+                icon.classList.add("fa-chevron-down");
+            } else {
+                resources.style.display = "block";
+                icon.classList.remove("fa-chevron-down");
+                icon.classList.add("fa-chevron-up");
+            }
+
+        }
+     </script>
 </body>
 </html>

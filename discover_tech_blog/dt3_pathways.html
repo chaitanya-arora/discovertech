@@ -869,7 +869,6 @@
 
         const recBox = document.getElementById("recommendation-box");
 
-        // Hide when nothing selected
         if (selectedSubjects.length === 0) {
             recBox.style.display = "none";
             return;
@@ -882,14 +881,12 @@
         const top    = PATHWAYS[topKey];
         const runner = PATHWAYS[runnerKey];
 
-        // Update text
         document.getElementById("rec-top-name").textContent    = top.name;
         document.getElementById("rec-top-name").style.color    = top.color;
         document.getElementById("rec-runner-name").textContent = runner.name;
         document.getElementById("rec-runner-name").style.color = runner.color;
         document.getElementById("rec-desc").textContent        = top.desc;
 
-        // Update scroll button colour + behaviour
         const btn = document.getElementById("rec-scroll-btn");
         btn.style.background = top.color;
         btn.onclick = () => {
@@ -898,19 +895,16 @@
             return false;
         };
 
-        // Update glowing border to match top pathway
         recBox.style.background = top.gradient;
         recBox.style.boxShadow  = `0 0 30px ${top.shadow}`;
 
-        // Re-trigger the fade-in animation each time subjects change
         recBox.style.display   = "none";
         recBox.style.animation = "none";
-        recBox.offsetHeight;       // force reflow
+        recBox.offsetHeight;     
         recBox.style.animation = "";
         recBox.style.display   = "block";
         }
 
-        // Adding Expandable Info Tabs on Subj-Pathway Table Headers to Provide Descriptions for Pathway Categories
         const tooltip = document.getElementById("tooltip");
         const infoIcons = document.querySelectorAll(".info-icon");
 
@@ -919,7 +913,6 @@
             const infoText = icon.dataset.info;
             tooltip.innerText = infoText;
 
-            // Position tooltip above the icon
             const rect = icon.getBoundingClientRect();
             tooltip.style.left = rect.left + window.scrollX + "px";
             tooltip.style.top = rect.bottom + window.scrollY + 8 + "px";
@@ -928,7 +921,6 @@
         });
         });
 
-        // Hide tooltip when clicking anywhere else
         document.addEventListener("click", (e) => {
         if (!e.target.classList.contains("info-icon")) {
             tooltip.style.display = "none";

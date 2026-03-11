@@ -1101,6 +1101,30 @@ a:link, a:visited, a:hover, a:active {
     padding: 0px 0px 10px 0px;
 }
 
+.resource-exp{
+    font-size: 18px;margin: 0px 20 px 30px 20px;
+    color: rgba(255,255,255,0.8);
+}
+
+.resources-drop-down {
+    display: none;
+    margin-top: 20px;
+}
+
+.dropdown-btn {
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(208, 205, 205, 0.3);
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-btn:active  {
+    background: rgba(208, 205, 205, 0.7);
+}
+
 .resource{
     margin-bottom: 40px;
     padding: 30px 20px;
