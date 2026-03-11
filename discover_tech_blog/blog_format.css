@@ -53,8 +53,6 @@ main{
 footer{
     background-color: #131c31;
     color: #ffffffcc;
-    font-family: sans-serif;
-    padding: 0px 0px 40px 0px;
 }
 footer p{
     margin: 0px;
@@ -1112,6 +1110,12 @@ tbody tr:hover{
 #interview-prep{
     background-color: rgba(134, 93, 231, 0.1);
     border: 1px solid #865DE7;
+    border-radius: 25px;
+}
+
+#forums{
+    background-color: rgba(223, 79, 151, 0.1);
+    border: 1px solid #DF4F97;
     border-radius: 25px;
 }
 
