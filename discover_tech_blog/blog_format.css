@@ -548,7 +548,7 @@ footer p{
 }
 
 .path-header-exp{
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffffcc;
     max-width: 1150px;
     margin: auto;
@@ -557,7 +557,7 @@ footer p{
 }
 
 #list-of-path-cats{
-    font-size: 20px;
+    font-size: 18 px;
     color: #ffffffcc;
     margin: 40px 350px;
     max-width: 900px;
@@ -1066,6 +1066,63 @@ tbody tr:hover{
 
 
 
+/* ===== RESOURCES PAGE: Resource Page Header ==== */
+.wrapper{
+    text-align: center;
+}
+#resources-container{
+    display: inline-block;
+    color: #f0f2f4;
+    border: 0.8px solid #f0f2f4;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 60px;
+}
+
+#resources-header{
+    font-size: 70px;
+    margin: 20px 0px;
+}
+
+.resource-section{
+    margin: 20px 40px;
+    padding: 20px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+  }
+  
+
+.resource-type{
+    padding: 0px 0px 10px 0px;
+}
+
+.resource{
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(246, 235, 220, 0.6);
+}
+
+.resource-name{
+    margin: 0px;
+}
+
+.fav_tag{
+    background:rgba(230, 211, 164, 0.3);;
+    padding:3px 8px;
+    border-radius:10px;
+    font-size:12px;
+    margin-left:5px;
+    color:#eab328;
+}
+
+
+
 /* ==== SUBSCRIBE PAGE: Subscribe Box ==== */ 
 #subscribe {
     display: flex;
@@ -1225,6 +1282,18 @@ hr {
     padding: 15px;
 
     background: linear-gradient(to right, #dd00ff, #ffb700 );
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+
+    color: #FC0097; /* fallback color if gradient not supported */
+}
+
+.grad-text-og {
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px;
+
+    background: linear-gradient(to right, #ff5500, #37ff00);
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 
