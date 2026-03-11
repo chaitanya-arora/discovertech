@@ -301,23 +301,23 @@ footer p{
 }
 
 #ai-ml {
-    background-color: rgba(134, 93, 231, 0.2) ;
+    background-color: rgba(134, 93, 231, 0.2);
 }
 
 #swe {
-    background-color: rgba(245, 151, 27, 0.2) ;
+    background-color: rgba(245, 151, 27, 0.2);
 }
 
 #data {
-    background-color: rgba(134, 93, 231, 0.2) ;
+    background-color: rgba(134, 93, 231, 0.2);
 }
 
 #cyber {
-    background-color: rgba(102, 142, 59, 0.2) ;
+    background-color: rgba(102, 142, 59, 0.2);
 }
 
 #cloud {
-    background-color: rgba(102, 142, 59, 0.2) ;
+    background-color: rgba(102, 142, 59, 0.2);
 }
 
 #ux-ui {
@@ -1091,18 +1091,42 @@ tbody tr:hover{
     padding: 20px;
 }
 
+#learning-platforms{
+    background-color: rgba(223, 79, 151, 0.1);
+    border: 1px solid #DF4F97;
+    border-radius: 25px;
+}
+
+#documentation{
+    background-color: rgba(245, 151, 27, 0.1);
+    border: 1px solid #F5971B;
+    border-radius: 25px;
+}
+
+#youtube{
+    background-color: rgba(102, 142, 59, 0.1);
+    border: 1px solid #668E3B;
+    border-radius: 25px;
+}
+
+#interview-prep{
+    background-color: rgba(134, 93, 231, 0.1);
+    border: 1px solid #865DE7;
+    border-radius: 25px;
+}
+
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: white;
-  }
+}
   
-
 .resource-type{
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .resource-exp{
-    font-size: 18px;margin: 0px 20 px 30px 20px;
+    font-size: 18px;
+    margin: 0px 20 px 30px 20px;
     color: rgba(255,255,255,0.8);
 }
 
@@ -1112,7 +1136,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .dropdown-btn {
-    margin-top: 12px;
+    margin: 10px 0px;
     padding: 10px 18px;
     border: none;
     border-radius: 8px;
