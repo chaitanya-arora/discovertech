@@ -193,7 +193,7 @@ footer p{
     text-align: center;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 40px 20px;
+    padding: 40px 20px 10px 20px;
     background-color: #131c31;
 }
 
@@ -1390,6 +1390,17 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* ==== SUBSCRIBE PAGE: Sub Statistics ==== */
+#sub-stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px 10px 20px;
+    background-color: #131c31;
+}
+
 #num-subs{
     color: #91bc62;
 }
