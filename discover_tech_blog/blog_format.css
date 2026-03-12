@@ -1236,6 +1236,28 @@ a:link, a:visited, a:hover, a:active {
     line-height: 1.7;
 }
 
+
+
+
+
+
+
+/* ==== COMMUNITY PAGE: Header ==== */
+#comm-header{
+    font-size: 70px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.comm-header-exp{
+    font-size: 20px;
+    color: #ffffffcc;
+    max-width: 1150px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
 /* ==== SUBSCRIBE PAGE: Subscribe Box ==== */ 
 #subscribe {
     display: flex;
@@ -1423,4 +1445,16 @@ hr {
     -webkit-text-fill-color: transparent; 
 
     color: #865DE7; /* fallback color if gradient not supported */
+}
+
+.grad-text-pp2 {
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px;
+
+    background: linear-gradient(to right, #ff00a2, #5500ff);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+
+    color: #DF4F97; /* fallback color if gradient not supported */
 }
