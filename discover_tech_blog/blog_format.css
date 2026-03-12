@@ -1216,6 +1216,26 @@ a:link, a:visited, a:hover, a:active {
 
 
 
+
+
+
+
+/* ==== APPLICATIONS PAGE: Header ===== */
+#app-header{
+    font-size: 70px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.app-header-exp{
+    font-size: 20px;
+    color: #ffffffcc;
+    max-width: 1150px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
 /* ==== SUBSCRIBE PAGE: Subscribe Box ==== */ 
 #subscribe {
     display: flex;
@@ -1366,7 +1386,7 @@ hr {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 
-    color: #FC0097; /* fallback color if gradient not supported */
+    color: #DF4F97; /* fallback color if gradient not supported */
 }
 
 .grad-text-po {
@@ -1378,7 +1398,7 @@ hr {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 
-    color: #FC0097; /* fallback color if gradient not supported */
+    color: #F5971B; /* fallback color if gradient not supported */
 }
 
 .grad-text-og {
@@ -1390,5 +1410,17 @@ hr {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
 
-    color: #FC0097; /* fallback color if gradient not supported */
+    color: #668E3B; /* fallback color if gradient not supported */
+}
+
+.grad-text-gp {
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px;
+
+    background: linear-gradient(to right, #37ff00, #ff00a6);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+
+    color: #865DE7; /* fallback color if gradient not supported */
 }
