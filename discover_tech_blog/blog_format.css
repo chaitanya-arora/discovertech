@@ -49,6 +49,39 @@ main{
     border-radius: 25px;
 }
 
+/* ==== General Styling for Body Section ==== */
+.linked-wrapper{
+    text-align: center;
+}
+
+.linked-wrapper:hover{
+    transform: scale(1.1);
+}
+
+.heading-white{
+    font-size: 120px;
+    text-align: center;
+    margin: 10px;
+}
+
+.heading-grad-full{
+    font-size: 120px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+
+    background: linear-gradient(to right, #ff00a2, #37ff00); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.subheading{
+    text-align: center;
+    color: rgba(255, 255, 255,0.8);
+    font-weight: normal;
+    font-size: 25px;
+}
+
 /* ==== Footer ==== */
 footer{
     background-color: #131c31;
@@ -115,17 +148,10 @@ footer p{
 
 
 
+
 /* ==== HOME PAGE: Heading Section ==== */
 
-.subheading-wrapper{
-    text-align: center;
-}
-
-.subheading-wrapper:hover{
-    transform: scale(1.1);
-}
-
-#subheading{
+#home-pathways-link{
     display: inline-block;
     color: #DF4F97;
     background-color: rgba(223, 78, 150, 0.2);
@@ -135,25 +161,6 @@ footer p{
     font-size: 14px;
     font-weight: normal;
     margin-top: 60px;
-}
-
-#heading1{
-    font-size: 120px;
-    text-align: center;
-    margin: 10px;
-}
-
-#heading2{
-    font-size: 120px;
-    text-align: center;
-    margin: 5px;
-}
-
-#slogan{
-    text-align: center;
-    color: rgba(255, 255, 255,0.8);
-    font-weight: normal;
-    font-size: 25px;
 }
 
 .button-wrapping{
@@ -1426,17 +1433,6 @@ hr {
     border: none;
     border-top: 0.5px solid rgba(255, 255, 255,0.4);
     margin: 0px;
-}
-
-.gradient-text {
-    font-size: 25px;
-    font-weight: bolder;
-    text-align: center;
-    padding: 15px;
-
-    background: linear-gradient(to right, #ff00a2, #37ff00); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
 }
 
 .grad-text-pp {
